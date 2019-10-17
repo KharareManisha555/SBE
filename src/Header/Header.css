@@ -1,0 +1,58 @@
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+.sbeHead{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.blackBg{
+  background-color: var(--black-background) !important; 
+}
+.whiteColor{
+  color: var(--white-color) !important;
+}
+.socialTwitter{
+  color: var(--white-color) !important;
+  padding: 4px;
+    font-size: 20px;
+  background: #44cef7;
+}
+.socialFacebook{
+  color: var(--white-color) !important;
+  padding: 4px 6px;
+    font-size: 20px;
+  background: #447bf7;
+}
+.socialGogle{
+  color: var(--white-color) !important;
+  padding: 4px;
+    font-size: 20px;
+  background: #f75d44;
+}
+.sbeHeader{
+  background: var(--orange-background);
+  border-color: transparent;
+  font-weight: 600;
+  border-radius: 0px;
+}
+.sbeNav li>a{
+  font-size: 15px;
+  color: var(--white-color) !important;
+}
+.sbeNav li:hover{
+  background-color: var(--black-background);
+  color: var(--white-color) !important;
+}
+.sbeDropdown{
+  background: var(--orange-background);
+}
+.sbeDropdown>li>a:hover, .sbeDropdown>li:hover{
+  color: var(--white-color) !important;
+  text-decoration: none;
+  background-color: var(--black-background);
+}
+.sbeDropdown>li{
+  border-top: 1px solid #ecdbbb;
+}
