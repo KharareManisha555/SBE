@@ -10,6 +10,9 @@ body {
 :root {
   --orange-background:#f3b94d;
   --black-background:#333;
+  --orange-color:#f3b94d;
   --white-color:#fff;
   --black-color:#333;
+
+  --primary-font:Arial, Helvetica, sans-serif;
 }

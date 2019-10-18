@@ -11,6 +11,7 @@ import '../App.css';
 import Caraousel from '../Caraousel/Caraousel.js';
 import Header from '../Header/Header.js';
 import Footer from '../Footer/Footer.js';
+import Sidebar from '../Sidebar/Sidebar.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
@@ -24,9 +25,13 @@ function Routes() {
     <div>
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" component={ WebLayout } />
-        </Switch>
+        <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+          {/* <Caraousel/> */}
+          <Sidebar />
+          <Switch>
+            <Route path="/" component={ WebLayout } />
+          </Switch>
+        </div>
         <Footer />
       </Router>
     </div>

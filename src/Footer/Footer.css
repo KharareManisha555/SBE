@@ -1,0 +1,27 @@
+.footer{
+    background-color: var(--orange-background); 
+    text-align: justify;
+    font-size: 14px;
+    font-family: var(--primary-font);
+    color: #000;
+}
+.sitemap ul>li {
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    padding: 1px 5px;
+    color:var(--black-color);
+}
+.sitemap ul>li>a{
+    font-size: 14px;
+    font-family: var(--primary-font);
+    color:var(--black-color);
+}
+.sitemap ul>li>a:hover{
+    text-decoration: none;
+}
+.footerBorderLine{
+    text-align: center;
+    color: var(--white-color);
+    padding: 15px;
+}

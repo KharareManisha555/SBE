@@ -1,0 +1,29 @@
+.content {
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+.sidebarUL{
+    padding: 19px;
+    background: #151515;
+    padding-bottom: 8px;
+}
+.sidebarUL h2 {
+    font-family: 'Calligraph421 BT';
+    text-align: center;
+    color:var(--orange-color);
+    margin-top: 0px;
+}
+.sidebarUL li {
+    border-bottom: 0px;
+    list-style: inside disc;
+    padding: 5px;
+    margin: 5px 10px;
+}
+.sidebarUL a {
+    color: var(--white-color);
+    text-decoration: none;
+}
