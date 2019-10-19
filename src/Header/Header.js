@@ -26,8 +26,8 @@ class Header extends Component {
             <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sbeHead">
                     <h1 className="col-lg-8 col-md-8 col-sm-12 col-xs-12 whiteColor">AAR AAR MITTAL & Sons</h1>
-                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor">Call us : +91-9810186920</span>
-                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor">Email-id : rrshobit@gmail.com</span>
+                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Call us :</b> +91-9810186920</span>
+                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Email-id :</b> rrshobit@gmail.com</span>
                     <i className="fa fa-facebook socialFacebook pull-right"></i>
                     <i className="fa fa-google socialGogle pull-right"></i>
                     <i className="fa fa-twitter socialTwitter pull-right"></i>

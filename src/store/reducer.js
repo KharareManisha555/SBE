@@ -1,14 +1,14 @@
 
 
 const initialState = {
-	blockData	 	: {},
+	subBlockData	 	: {},
 }
 
 const reducer = (state = initialState,action) => {
     const newState = {...state}; 
     console.log('action.type', action.type);
 	if(action.type === "winding-wire-of-copper-aluminium"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Winding Wire of',
             title2 : 'Copper / Aluminum',
             image : '/images/pic3.jpg',
@@ -23,7 +23,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "copper-clad-aluminium-wire"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Copper Clad',
             title2 : 'Aluminum Wire',
             image : '/images/pic3.jpg',
@@ -32,7 +32,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "electric-insulating-materials"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Electric',
             title2 : 'Insulating Materials',
             image : '/images/pic2.jpg',
@@ -48,7 +48,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "kraft-paper"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Kraft',
             title2 : 'Paper',
             image : '/images/pic4.jpg',
@@ -57,7 +57,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "press-pahn-paper"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Press',
             title2 : 'Pahn Paper',
             image : '/images/pic5.jpg',
@@ -73,7 +73,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "nomex-du-pont"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : '"F" & "H" ',
             title2 : 'Nomex-DU Pont',
             image : '/images/pic6.jpg',
@@ -96,7 +96,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "crepe-paper"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Crepe',
             title2 : 'Paper',
             image : '/images/pic7.jpg',
@@ -109,7 +109,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "sleeving-and-cotton-tape"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Sleeving "B" to "H"',
             title2 : 'Class & Cotton Tape',
             image : '/images/pic8.jpg',
@@ -124,7 +124,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "polyster-garware"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Polyster',
             title2 : 'Garware',
             image : '/images/pic9.jpg',
@@ -133,7 +133,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "dr-beck-resins-hardener-varnishes"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Dr Beck Resins',
             title2 : 'Hardener & Varnishes',
             image : '/images/pic10.jpg',
@@ -161,7 +161,7 @@ const reducer = (state = initialState,action) => {
         };
     }
     if(action.type === "about-us"){
-		newState.blockData 		= {
+		newState.subBlockData 		= {
             title1 : 'Polyster',
             title2 : 'Garware',
             image : '/images/pic9.jpg',

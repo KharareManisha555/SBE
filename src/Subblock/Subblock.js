@@ -60,7 +60,7 @@ class Subblock extends Component{
 }
 const mapStateToProps = (state)=>{
     return {
-        blockData      : state.subBlockData,
+        subBlockData      : state.subBlockData,
     }
   }
   const mapDispachToProps = (dispach) =>{

@@ -23,3 +23,7 @@ body {
 .whiteColor{
   color: var(--white-color) !important;
 }
+.NOpadding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
