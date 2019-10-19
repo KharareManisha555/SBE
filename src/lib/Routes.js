@@ -8,25 +8,27 @@ import 'font-awesome/css/font-awesome.min.css';
 
 import '../App.css';
 
-import Caraousel from '../Caraousel/Caraousel.js';
-import Header from '../Header/Header.js';
-import Footer from '../Footer/Footer.js';
-import Sidebar from '../Sidebar/Sidebar.js';
-import Homepage from '../Homepage/Homepage.js';
-import Aboutus from '../Aboutus/Aboutus.js';
-import Subblock from '../Subblock/Subblock.js';
-import Contactus from '../Contactus/Contactus.js';
-import Enquiry from '../Enquiry/Enquiry.js';
-import Sitemap from '../Sitemap/Sitemap.js';
+import Caraousel  from '../Caraousel/Caraousel.js';
+import Header     from '../Header/Header.js';
+import Footer     from '../Footer/Footer.js';
+import Sidebar    from '../Sidebar/Sidebar.js';
+import Homepage   from '../Homepage/Homepage.js';
+import Aboutus    from '../Aboutus/Aboutus.js';
+import Products   from '../Products/Products.js';
+import Subblock   from '../Subblock/Subblock.js';
+import Contactus  from '../Contactus/Contactus.js';
+import Enquiry    from '../Enquiry/Enquiry.js';
+import Sitemap    from '../Sitemap/Sitemap.js';
 
 const WebLayout = () => (
   <div className="skin-blue fixed sidebar-mini">    
-    <Route path="/" exact strict component={ Homepage } /> 
-    <Route path="/about-us" exact strict component={ Aboutus } /> 
-    <Route path="/sbe/:url" exact strict component={ Subblock } /> 
+    <Route path="/"           exact strict component={ Homepage } /> 
+    <Route path="/about-us"   exact strict component={ Aboutus } /> 
+    <Route path="/products"   exact strict component={ Products } /> 
+    <Route path="/sbe/:url"   exact strict component={ Subblock } /> 
     <Route path="/contact-us" exact strict component={ Contactus } /> 
-    <Route path="/enquiry" exact strict component={ Enquiry } /> 
-    <Route path="/sitemap" exact strict component={ Sitemap } /> 
+    <Route path="/enquiry"    exact strict component={ Enquiry } /> 
+    <Route path="/sitemap"    exact strict component={ Sitemap } /> 
   </div>
 );
 
