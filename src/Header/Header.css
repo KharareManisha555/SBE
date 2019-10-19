@@ -7,12 +7,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.blackBg{
-  background-color: var(--black-background) !important; 
-}
-.whiteColor{
-  color: var(--white-color) !important;
-}
 .socialTwitter{
   color: var(--white-color) !important;
   padding: 4px;

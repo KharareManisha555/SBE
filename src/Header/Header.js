@@ -51,16 +51,16 @@ class Header extends Component {
                                     <li className="dropdown">
                                         <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
                                         <ul className="dropdown-menu sbeDropdown">
-                                            <li><a href="#">Winding Wire of Copper / Aluminum</a></li>
-                                            <li><a href="#">Copper Clad Aluminum Wire</a></li>
-                                            <li><a href="#">Electric Insulating Materials</a></li>
-                                            <li><a href="#">Kraft Paper</a></li>
-                                            <li><a href="#">Press Pahn Paper</a></li>
-                                            <li><a href="#">"F" & "H" Nomex-DU Pont</a></li>
-                                            <li><a href="#">Crepe Paper</a></li>
-                                            <li><a href="#">Sleeving "B" to "H" Class & Cotton Tape</a></li>
-                                            <li><a href="#">Polyster Garware</a></li>
-                                            <li><a href="#">Dr Beck Resins Hardener & Varnishes</a></li>
+                                            <li><a href="/block/winding-wire-of-copper-aluminium">Winding Wire of Copper / Aluminum</a></li>
+                                            <li><a href="/block/copper-clad-aluminium-wire">Copper Clad Aluminum Wire</a></li>
+                                            <li><a href="/block/electric-insulating-materials">Electric Insulating Materials</a></li>
+                                            <li><a href="/block/kraft-paper">Kraft Paper</a></li>
+                                            <li><a href="/block/press-pahn-paper">Press Pahn Paper</a></li>
+                                            <li><a href="/block/nomex-du-pont">"F" & "H" Nomex-DU Pont</a></li>
+                                            <li><a href="/block/crepe-paper">Crepe Paper</a></li>
+                                            <li><a href="/block/sleeving-and-cotton-tape">Sleeving "B" to "H" Class & Cotton Tape</a></li>
+                                            <li><a href="/block/polyster-garware">Polyster Garware</a></li>
+                                            <li><a href="/block/dr-beck-resins-hardener-varnishes">Dr Beck Resins Hardener & Varnishes</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">Contact Us</a></li>

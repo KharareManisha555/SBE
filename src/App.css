@@ -1,4 +1,5 @@
 body {
+  font-family: var(--primary-font);
   background-color: #000 !important;
 }
 .orangeBackground{
@@ -15,4 +16,10 @@ body {
   --black-color:#333;
 
   --primary-font:Arial, Helvetica, sans-serif;
+}
+.blackBg{
+  background-color: var(--black-background) !important; 
+}
+.whiteColor{
+  color: var(--white-color) !important;
 }

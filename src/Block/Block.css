@@ -1,0 +1,24 @@
+.block h3{
+    font-size: 21px;
+    font-weight: bold;
+    color: var(--orange-color);
+}
+.block-images{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.img-bordered{
+    border: 1px solid #ddd;
+}
+.para1{
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+}
+.para2{
+    color: var(--white-color);
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+}
