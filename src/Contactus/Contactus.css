@@ -1,0 +1,12 @@
+.contactus h2{
+    color: var(--orange-color);
+    font-weight: bold;
+}
+.contactus p{
+    text-align: justify;
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 22px;
+    /* padding: 10px; */
+    text-align: justify;
+}

@@ -23,12 +23,11 @@ class Footer extends Component{
                                 <h3>Site Map</h3>
                                 <ul>
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="/">About us</a></li>
-                                    <li><a href="/">Products</a></li>
-                                    <li><a href="/">RR Kabel</a></li>
-                                    <li><a href="/">Contact us</a></li>
-                                    <li><a href="/">Enquiry</a></li>
-                                    <li><a href="/">Site Map</a></li>
+                                    <li><a href="/about-us">About us</a></li>
+                                    <li><a href="/products">Products</a></li>
+                                    <li><a href="/contact-us">Contact us</a></li>
+                                    <li><a href="/enquiry">Enquiry</a></li>
+                                    <li><a href="/sitemap">Site Map</a></li>
                                 </ul>
                             </div>
                         </div>

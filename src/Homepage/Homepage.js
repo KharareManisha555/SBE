@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {withRouter} from 'react-router-dom';
+import { connect }        from 'react-redux';
 import "./Homepage.css";
 
 class Homepage extends Component{
@@ -7,7 +9,7 @@ class Homepage extends Component{
         this.state={
         }
     } 
-
+    
 
     render(){
         return(
@@ -22,5 +24,4 @@ class Homepage extends Component{
         )
     }
 }
-
-export default Homepage;
+export default withRouter(Homepage);

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
 import { connect }        from 'react-redux';
-import "./Block.css";
+import "./Subblock.css";
 
-class Block extends Component{
+class Subblock extends Component{
     constructor(props) {
         super(props);
         this.state={
@@ -12,22 +12,22 @@ class Block extends Component{
     componentDidMount(){
         var url = this.props.match.params.url;
         console.log('url', url);
-        this.props.sendBlockData(url);
+        this.props.subBlockDataUrl(url);
         this.setState({
-            title1 : this.props.blockData.title1,
-            title2 : this.props.blockData.title2,
-            image  : this.props.blockData.image,
-            para1  : this.props.blockData.para1,
-            para2  : this.props.blockData.para2
+            title1 : this.props.subBlockData.title1,
+            title2 : this.props.subBlockData.title2,
+            image  : this.props.subBlockData.image,
+            para1  : this.props.subBlockData.para1,
+            para2  : this.props.subBlockData.para2
         })
     }
     componentWillReceiveProps(nextProps){
         this.setState({
-            title1 : nextProps.blockData.title1,
-            title2 : nextProps.blockData.title2,
-            image  : nextProps.blockData.image,
-            para1  : nextProps.blockData.para1,
-            para2  : nextProps.blockData.para2
+            title1 : nextProps.subBlockData.title1,
+            title2 : nextProps.subBlockData.title2,
+            image  : nextProps.subBlockData.image,
+            para1  : nextProps.subBlockData.para1,
+            para2  : nextProps.subBlockData.para2
         })
     }
     render(){
@@ -60,14 +60,14 @@ class Block extends Component{
 }
 const mapStateToProps = (state)=>{
     return {
-        blockData      : state.blockData,
+        blockData      : state.subBlockData,
     }
   }
   const mapDispachToProps = (dispach) =>{
     return {
-      sendBlockData : (blockData)=> dispach({
-        type: blockData,
+        subBlockDataUrl : (subBlockData)=> dispach({
+        type: subBlockData,
       }),
     }
   }
-  export default connect(mapStateToProps, mapDispachToProps)(withRouter(Block));
+  export default connect(mapStateToProps, mapDispachToProps)(withRouter(Subblock));

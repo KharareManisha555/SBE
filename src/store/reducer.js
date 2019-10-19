@@ -159,7 +159,16 @@ const reducer = (state = initialState,action) => {
                 'Casting, potting and encapsulation of electrical and electronic components such as high voltage insulators, instrument transformers etc. Impregnation of high voltage windings of electrical machines. Binder resins for glass-fibre filament wound arc chamber tubes. Products: Dobeckot®, Dobefil, Dobeckan®IF',
             ]
         };
-	}
+    }
+    if(action.type === "about-us"){
+		newState.blockData 		= {
+            title1 : 'Polyster',
+            title2 : 'Garware',
+            image : '/images/pic9.jpg',
+            para1 : "We are Authorized Distributor of Polyster Film - Garware , which is made up of premier quality raw material thus, confirming to the international standards. It Can be Supplied as per specific sizes of customer's need.",
+            para2 : []
+        };
+    }
 	return newState;
 }
 
