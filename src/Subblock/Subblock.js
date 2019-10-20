@@ -37,7 +37,18 @@ class Subblock extends Component{
                     <h3><span className="whiteColor">{this.state.title1}</span>&nbsp;{this.state.title2}</h3>
                     <br/>
                     <div className="block-images">
-                        <a href={this.state.image}><img className="img-bordered" src={this.state.image} alt=""/></a>
+                        <img data-toggle="modal" data-target={"#showModal"} className="img-bordered" src={this.state.image} alt=""/>
+                    </div>
+                    <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal"} role="dialog">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div className="modal-content blockModal col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 NOpadding">
+                                <div className="modal-body blockModal-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <button type="button" className="cancelModal pull-right" data-dismiss="modal" data-target={"#showModal"}>&times;</button>
+                                    <img src={this.state.image} alt="" />
+                                    <h4>{this.state.title1} {this.state.title2}</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <br/>
                     <p className="para1">{this.state.para1}</p>

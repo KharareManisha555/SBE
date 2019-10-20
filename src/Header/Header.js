@@ -11,14 +11,25 @@ class Header extends Component {
     componentDidMount() {
         $('.dropdown-toggle').click(function(e) {
             if ($(document).width() > 768) {
-              e.preventDefault();
-              var url = $(this).attr('href');
-              if (url !== '#') {
+                e.preventDefault();
+                var url = $(this).attr('href');
+                if (url !== '#') {
                 window.location.href = url;
-              }
-          
+                }
             }
-          });
+        });
+        let links = document.getElementsByClassName('sbeLi');
+    	// console.log(links);
+    	
+    	for (var i = 0; i <= links.length; i++) {
+    		console.log(window.location.pathname);
+    		console.log($(links[i]).find('a').attr('href'));
+    		if (window.location.pathname == $(links[i]).find('a').attr('href')) {
+    			
+    			$(links[i]).addClass('current');
+    		}
+    		
+    	}
     }
 
     render() {
@@ -33,7 +44,7 @@ class Header extends Component {
                     <i className="fa fa-twitter socialTwitter pull-right"></i>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <nav className="navbar navbar-default sbeHeader">
+                    <nav className="navbar sbeHeader">
                         <div className="container-fluid">
                             <div className="navbar-header">
                                 <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,11 +56,11 @@ class Header extends Component {
                                 {/* <a className="navbar-brand" href="#">Project name</a> */}
                             </div>
                             <div id="navbar" className="navbar-collapse collapse">
-                                <ul className="nav navbar-nav sbeNav">
-                                    <li className=""><a href="/">Home</a></li>
-                                    <li><a href="/about-us">About Us</a></li>
-                                    <li className="dropdown">
-                                        <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
+                                <ul className="nav sbeNav navbar-nav">
+                                    <li className="sbeLi"><a href="/">Home</a></li>
+                                    <li className="sbeLi"><a href="/about-us">About Us</a></li>
+                                    <li className="sbeLi dropdown">
+                                        <a href="/products" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
                                         <ul className="dropdown-menu sbeDropdown">
                                             <li><a href="/sbe/winding-wire-of-copper-aluminium">Winding Wire of Copper / Aluminum</a></li>
                                             <li><a href="/sbe/copper-clad-aluminium-wire">Copper Clad Aluminum Wire</a></li>
@@ -63,9 +74,9 @@ class Header extends Component {
                                             <li><a href="/sbe/dr-beck-resins-hardener-varnishes">Dr Beck Resins Hardener & Varnishes</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/contact-us">Contact Us</a></li>
-                                    <li><a href="/enquiry">Enquiry</a></li>
-                                    <li><a href="/sitemap">Site Map</a></li>
+                                    <li className="sbeLi"><a href="/contact-us">Contact Us</a></li>
+                                    <li className="sbeLi"><a href="/enquiry">Enquiry</a></li>
+                                    <li className="sbeLi"><a href="/sitemap">Site Map</a></li>
                                 </ul>
 
                             </div>

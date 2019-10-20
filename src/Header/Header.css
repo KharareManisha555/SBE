@@ -3,6 +3,9 @@
     display: block;
   }
 }
+.current, .current > a{
+  /* color: #333 !important; */
+}
 .sbeHead{
   padding-top: 15px;
   padding-bottom: 15px;
@@ -10,7 +13,7 @@
 .socialTwitter{
   color: var(--white-color) !important;
   padding: 4px;
-    font-size: 20px;
+  font-size: 20px;
   background: #44cef7;
 }
 .socialFacebook{
@@ -22,7 +25,7 @@
 .socialGogle{
   color: var(--white-color) !important;
   padding: 4px;
-    font-size: 20px;
+  font-size: 20px;
   background: #f75d44;
 }
 .sbeHeader{
@@ -30,12 +33,14 @@
   border-color: transparent;
   font-weight: 600;
   border-radius: 0px;
+  border: none;
 }
+
 .sbeNav li>a{
   font-size: 15px;
-  color: var(--white-color) !important;
+  color: var(--white-color);
 }
-.sbeNav li:hover{
+.sbeNav>li:hover, .sbeNav>li>a:hover{
   background-color: var(--black-background);
   color: var(--white-color) !important;
 }
@@ -49,4 +54,7 @@
 }
 .sbeDropdown>li{
   border-top: 1px solid #ecdbbb;
+}
+.icon-bar {
+  background: var(--white-background)
 }

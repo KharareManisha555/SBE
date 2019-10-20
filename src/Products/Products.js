@@ -63,8 +63,19 @@ class Products extends Component{
                             this.state.products.map((data, index)=>{
                                 return(
                                     <li key="index" className="">
-                                        <img src={data.image} />
+                                        <img src={data.image} data-toggle="modal" data-target={"#showModal-"+index} className="productImg"/>
                                         <div className="imgTitle" dangerouslySetInnerHTML={{__html: data.title}}></div>
+                                        <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal-"+index} role="dialog">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div className="modal-content blockModal col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 NOpadding">
+                                                    <div className="modal-body blockModal-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <button type="button" className="cancelModal pull-right" data-dismiss="modal" data-target={"#showModal-"+index}>&times;</button>
+                                                        <img src={data.image} alt="" />
+                                                        <div dangerouslySetInnerHTML={{__html: data.title}}></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </li>
                                 );
                             })

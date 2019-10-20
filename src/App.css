@@ -10,11 +10,11 @@ body {
 }
 :root {
   --orange-background:#f3b94d;
-  --black-background:#333;
+  --black-background:#000;
+  --white-background:#fff;
   --orange-color:#f3b94d;
   --white-color:#fff;
-  --black-color:#333;
-
+  --black-color:#000;
   --primary-font:Arial, Helvetica, sans-serif;
 }
 .blackBg{
@@ -27,3 +27,21 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+.blockModal {
+  margin-top: 15%;
+}
+.blockModal-body{
+  text-align: center;
+}
+.cancelModal{
+  background: var(--orange-background);
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+.blockModal-body h4{
+  font-size: 16px;
+  font-weight: 600;
+}
+.error{
+  color: #ff730d !important;
+} 

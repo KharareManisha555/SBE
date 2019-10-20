@@ -4,6 +4,7 @@
     color: var(--orange-color);
 }
 .block-images{
+    cursor: pointer;
     overflow: hidden;
     margin-bottom: 10px;
 }
