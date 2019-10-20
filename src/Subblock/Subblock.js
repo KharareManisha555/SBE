@@ -11,7 +11,7 @@ class Subblock extends Component{
     } 
     componentDidMount(){
         var url = this.props.match.params.url;
-        console.log('url', url);
+        
         this.props.subBlockDataUrl(url);
         this.setState({
             title1 : this.props.subBlockData.title1,

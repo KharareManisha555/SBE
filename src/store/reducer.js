@@ -6,7 +6,6 @@ const initialState = {
 
 const reducer = (state = initialState,action) => {
     const newState = {...state}; 
-    console.log('action.type', action.type);
 	if(action.type === "winding-wire-of-copper-aluminium"){
 		newState.subBlockData 		= {
             title1 : 'Winding Wire of',

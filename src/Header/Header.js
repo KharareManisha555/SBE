@@ -19,11 +19,8 @@ class Header extends Component {
             }
         });
         let links = document.getElementsByClassName('sbeLi');
-    	// console.log(links);
     	
     	for (var i = 0; i <= links.length; i++) {
-    		console.log(window.location.pathname);
-    		console.log($(links[i]).find('a').attr('href'));
     		if (window.location.pathname == $(links[i]).find('a').attr('href')) {
     			
     			$(links[i]).addClass('current');

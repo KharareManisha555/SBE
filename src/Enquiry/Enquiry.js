@@ -116,7 +116,6 @@ class Enquiry extends Component{
         if($('#enquiry').valid()){
             axios.post('/api/users/sendmail', formValues)
             .then((response)=>{
-                // console.log('res', response);
                 swal("Your Request Submitted successfully");
                 this.setState({
                     "firstName"     : '',

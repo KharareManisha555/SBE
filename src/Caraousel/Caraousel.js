@@ -70,36 +70,20 @@ export default class Caraousel extends Component {
   caraouselData() {
     return [
       {
-        caraouselTitle: "Geology & Geophysics",
-        hryperlink: "geoligy",
-        caraouselimg: "/images/pic10.jpg",
-        caraouseltext: "iOG understands the various paradigms of the sub-surface ecosystem and its complexity. The domain knowledge and expertise in multiple discipline enables it to understand, interpreted and model the subsurface."
+        image: "/images/pic10.jpg",
       },
       {
-        caraouselTitle: "Production Management",
-        hryperlink: "productionmanagement",
-        caraouselimg: "/images/pic3.jpg",
-        caraouseltext: "iOG solutions provide the complete range of Production Management services."
+        image: "/images/pic3.jpg",
       },
       {
-        caraouselTitle: "Reservoir Management",
-        hryperlink: "reserviormanagement",
-        caraouselimg: "/images/pic4.jpg",
-        caraouseltext: "iOG solutions provide end-to-end consulting services for management of reservoirs, utilizing state of the art geo-science and engineering technologies."
+        image: "/images/pic4.jpg",
       },
       {
-        caraouselTitle: "Data Management Services",
-        hryperlink: "datamanagement",
-        caraouselimg: "/images/pic2.jpg",
-        caraouseltext: "iOG solutions provide the complete range of Production Management services."
+        image: "/images/pic2.jpg",
       },
       {
-        caraouselTitle: "Well & Drilling Services",
-        hryperlink: "welldrilling",
-        caraouselimg: "/images/pic5.jpg",
-        caraouseltext: "iOG solutions provide Management Services for Well Planning, Drilling, Test & Log Interpretation, Performance Monitoring to abandonment."
+        image: "/images/pic5.jpg",
       }
-
     ]
 
   }
@@ -116,7 +100,7 @@ export default class Caraousel extends Component {
                     <div key={index} className="slide col-lg-3 col-md-3 col-sm-3 col-xs-3" data-slide={index}>
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-                          <img src={data.caraouselimg} className="img-responsive" />
+                          <img src={data.image} className="img-responsive" />
                         </div>
                       </div>
                     </div>
