@@ -146,10 +146,9 @@ class Enquiry extends Component{
         }
     }
     callbackFun(){
-        console.log('Done!!!!');
+        
     };
     captchaVerified(){
-        console.log('verified');
         this.setState({
             captchaVerified : true,
             captchaError : ''

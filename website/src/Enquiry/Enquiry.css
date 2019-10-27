@@ -36,3 +36,21 @@
 .captchaError{
     color: #ff730d !important;
 }
+@media only screen and (max-width : 736px){
+    .enquiry{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .enquiryform{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .formInput {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .formBtn{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
