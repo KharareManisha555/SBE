@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
+import Recaptcha from 'react-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
 import jQuery from 'jquery';
@@ -9,9 +10,14 @@ import swal from 'sweetalert';
 
 class Enquiry extends Component{
     constructor(props) {
+        
         super(props);
         this.state={
+            captchaError : '',
+            captchaVerified : false
         }
+        this.callbackFun = this.callbackFun.bind(this);
+        this.captchaVerified = this.captchaVerified.bind(this);
     } 
     componentDidMount(){
           $.validator.addMethod("regxfirstName", function (value, element, regexpr) {
@@ -28,10 +34,10 @@ class Enquiry extends Component{
           }, "Address should only contain letters & number.");
           $.validator.addMethod("regxemailId", function (value, element, regexpr) {
             return regexpr.test(value);
-          }, "Email should only contain letters & number.");
+          }, "Please enter valid email ID.");
           $.validator.addMethod("regxmobileNumber", function (value, element, regexpr) {
             return regexpr.test(value);
-          }, "Mobile Number should only contain letters & number.");
+          }, "Please enter valid mobile number.");
           $.validator.addMethod("regxrequirement", function (value, element, regexpr) {
             return regexpr.test(value);
           }, "Requirements should only contain letters & number.");
@@ -45,27 +51,27 @@ class Enquiry extends Component{
             rules: {
                 firstName: {
                     required: true,
-                    regxfirstName: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxfirstName: /^[A-Za-z][A-Za-z0-9\-\s]*$/,
                 },
                 lastName: {
                     required: true,
-                    regxlastName: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxlastName: /^[A-Za-z][A-Za-z0-9\-\s]*$/,
                 },
                 companyName: {
                     required: true,
-                    regxcompanyName: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxcompanyName: /^[A-Za-z][A-Za-z0-9\-\s]*$/,
                 },
                 address: {
                     required: true,
-                    regxaddress: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxaddress: /^[A-Za-z][A-Za-z0-9\-\s]*$/,
                 },
                 emailId: {
                     required: true,
-                    regxfirstName: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxemailId :  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
                 },
                 mobileNumber: {
                     required: true,
-                    regxfirstName: /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?\s]*$/,
+                    regxmobileNumber: /^([7-9][0-9]{9})$/,
                 },
                 requirement: {
                     required: true,
@@ -114,26 +120,41 @@ class Enquiry extends Component{
             "captcha"       : this.state.captcha
         }
         if($('#enquiry').valid()){
-            axios.post('/api/users/sendmail', formValues)
-            .then((response)=>{
-                swal("Your Request Submitted successfully");
+            if(this.state.captchaVerified == true){
+                axios.post('/api/users/sendmail', formValues)
+                .then((response)=>{
+                    swal("Your Request Submitted successfully");
+                    this.setState({
+                        "firstName"     : '',
+                        "lastName"      : '',
+                        "companyName"   : '',
+                        "address"       : '',
+                        "emailId"       : '',
+                        "mobileNumber"  : '',
+                        "requirement"   : '',
+                        "captcha"       : '',
+                    });
+                })
+                .catch((error)=>{
+                    console.log('error', error);
+                })
+            }else{
                 this.setState({
-                    "firstName"     : '',
-                    "lastName"      : '',
-                    "companyName"   : '',
-                    "address"       : '',
-                    "emailId"       : '',
-                    "mobileNumber"  : '',
-                    "requirement"   : '',
-                    "captcha"       : '',
-                });
-            })
-            .catch((error)=>{
-                console.log('error', error);
-            })
+                    captchaError : "Please verify captcha code"
+                })
+            }
         }
     }
-        
+    callbackFun(){
+        console.log('Done!!!!');
+    };
+    captchaVerified(){
+        console.log('verified');
+        this.setState({
+            captchaVerified : true,
+            captchaError : ''
+        })
+    }
     reset(event){
         event.preventDefault();
         this.setState({
@@ -146,7 +167,7 @@ class Enquiry extends Component{
             "requirement"   : '',
             "captcha"       : '',
         })
-        // $("#enquiry").validate().reset();
+        window.location.reload();
     }
     render(){
         return(
@@ -177,15 +198,21 @@ class Enquiry extends Component{
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
                             <label>E-mail: <span className="mandatory">*</span></label><br/>
-                            <input value={this.state.emailId} ref="emailId" name="emailId" id="emailId" onChange={this.handleChange.bind(this)} className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
+                            <input type="email" value={this.state.emailId} ref="emailId" name="emailId" id="emailId" onChange={this.handleChange.bind(this)} className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
                             <label>Requirement: <span className="mandatory">*</span></label><br/>
                             <textarea value={this.state.requirement} ref="requirement" name="requirement" onChange={this.handleChange.bind(this)} id="requirement" rows="4" className="col-lg-12 col-md-12 col-sm-12 col-xs-12"></textarea>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
-                            <label>&nbsp;</label><br/>
-                            <input className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
+                        <Recaptcha
+                            sitekey="6LdDpb8UAAAAAF--p9Mug9_kH1tEVEN4TBZK6UYG"
+                            render="explicit"
+                            onloadCallback={this.callbackFun}
+                            type="image"
+                            verifyCallback={this.captchaVerified}
+                        />
+                        <label className="captchaError">{this.state.captchaError}</label>
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formBtn">
                             <button className="btn" onClick={this.submit.bind(this)}>Submit</button> &nbsp; &nbsp;

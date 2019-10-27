@@ -7,6 +7,7 @@ import './Caraousel.css';
 export default class Caraousel extends Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     window.addEventListener('DOMContentLoaded', () => { setTimeout(init, 1) }, true);
     function init(e) {
       if (document.querySelector(".slides")) {
