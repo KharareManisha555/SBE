@@ -73,12 +73,12 @@ const mapStateToProps = (state)=>{
     return {
         subBlockData      : state.subBlockData,
     }
-  }
-  const mapDispachToProps = (dispach) =>{
+}
+const mapDispachToProps = (dispach) =>{
     return {
         subBlockDataUrl : (subBlockData)=> dispach({
         type: subBlockData,
       }),
     }
-  }
-  export default connect(mapStateToProps, mapDispachToProps)(withRouter(Subblock));
+}
+export default connect(mapStateToProps, mapDispachToProps)(withRouter(Subblock));

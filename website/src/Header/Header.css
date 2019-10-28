@@ -11,18 +11,21 @@
   padding-bottom: 15px;
 }
 .socialTwitter{
+  cursor: pointer;
   color: var(--white-color) !important;
   padding: 4px;
   font-size: 20px;
   background: #44cef7;
 }
 .socialFacebook{
+  cursor: pointer;
   color: var(--white-color) !important;
   padding: 4px 6px;
     font-size: 20px;
   background: #447bf7;
 }
 .socialGogle{
+  cursor: pointer;
   color: var(--white-color) !important;
   padding: 4px;
   font-size: 20px;
