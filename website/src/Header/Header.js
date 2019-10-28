@@ -33,12 +33,11 @@ class Header extends Component {
         return (
             <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sbeHead">
-                    <h1 className="col-lg-8 col-md-8 col-sm-12 col-xs-12 whiteColor">AAR AAR MITTAL & Sons</h1>
-                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Call us :</b> +91-9810186920</span>
-                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Email-id :</b> rrshobit@gmail.com</span>
-                    <i className="fa fa-facebook socialFacebook pull-right"></i>
-                    <i className="fa fa-google socialGogle pull-right"></i>
-                    <i className="fa fa-twitter socialTwitter pull-right"></i>
+                    <h1 className="col-lg-8 col-md-8 col-sm-12 col-xs-12 whiteColor">Shri Balaji Electricals</h1>
+                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Call us :</b> +91-9820695966</span>
+                    <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Email-id :</b> ahujap63@yahoo.com</span>
+                    <a href="https://www.facebook.com/Shri-Balaji-Electricals-101417767921726/notifications/"><i className="fa fa-facebook socialFacebook pull-right"></i></a>
+                    <a href="https://www.indiamart.com/shri-balaji-electrical-maharashtra/"><img src="/images/Indiamart.png" width="50" className="pull-right"/></a>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <nav className="navbar sbeHeader">
@@ -59,7 +58,7 @@ class Header extends Component {
                                     <li className="sbeLi dropdown">
                                         <a href="/products" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span className="caret"></span></a>
                                         <ul className="dropdown-menu sbeDropdown">
-                                            <li><a href="/sbe/winding-wire-of-copper-aluminium">Winding Wire of Copper / Aluminum</a></li>
+                                            <li><a href="/sbe/winding-wire-of-copper-aluminium">PVC Tape Biocon Electric PVC Tape</a></li>
                                             <li><a href="/sbe/copper-clad-aluminium-wire">Copper Clad Aluminum Wire</a></li>
                                             <li><a href="/sbe/electric-insulating-materials">Electric Insulating Materials</a></li>
                                             <li><a href="/sbe/kraft-paper">Kraft Paper</a></li>

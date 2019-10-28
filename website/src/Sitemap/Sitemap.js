@@ -22,7 +22,7 @@ class Sitemap extends Component{
                         <li><a href="/about-us">About us</a></li>
                         <li><a href="/products">Products</a>
                             <ul>
-                                <li><a href="/sbe/winding-wire-of-copper-aluminium">Winding Wire of Copper / Aluminum</a></li>
+                                <li><a href="/sbe/winding-wire-of-copper-aluminium">PVC Tape Biocon Electric PVC Tape</a></li>
                                 <li><a href="/sbe/copper-clad-aluminium-wire">Copper Clad Aluminum Wire</a></li>
                                 <li><a href="/sbe/electric-insulating-materials">Electric Insulating Materials</a></li>
                                 <li><a href="/sbe/kraft-paper">Kraft Paper</a></li>

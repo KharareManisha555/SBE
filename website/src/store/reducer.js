@@ -8,16 +8,27 @@ const reducer = (state = initialState,action) => {
     const newState = {...state}; 
 	if(action.type === "winding-wire-of-copper-aluminium"){
 		newState.subBlockData 		= {
-            title1 : 'Winding Wire of',
-            title2 : 'Copper / Aluminum',
-            image : '/images/pic3.jpg',
-            para1 : '',
+            title1 : 'PVC Tape',
+            title2 : 'Biocon Electric PVC Tape',
+            image : '/images/biocon-electric-pvc-tap.jpg',
+            para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
-                'Offering you a complete choice of products which include Copper & Aluminium Wires & Strips such as :',
-                '1. Double Paper Covered Conductors',
-                '2. Super Enameled Wires & Strips of Copper & Aluminum',
-                '3. Fiber / Cotton Cover Conductors',
-                '4. Submersible Wire'
+                'Biocon Electric PVC Tape',
+                
+                'Minimum Order Quantity: 40 Roll',
+                'Rs 6.3 / RollGet Latest Price',
+
+                'Adhesive Type: Single Sided',
+                'Material     : PVC',
+                'Brand        : Biocon',
+                'Tape Length  : 0-10 m',
+                'Tape Width   : 0-20 mm',
+
+                'Biocon Electric PVC Tape',
+
+                'Additional Information:',
+
+                'Packaging Details: 20 nos per box',
             ]
         };
     }

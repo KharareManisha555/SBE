@@ -22,7 +22,7 @@ class Sidebar extends Component {
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 content">
                 <ul className="sidebarUL">
                     <h2>Our Products</h2>
-                    <li id="winding-wire-of-copper-aluminium" onClick={this.getUrl.bind(this)}>Winding Wire of Copper / Aluminum</li>
+                    <li id="winding-wire-of-copper-aluminium" onClick={this.getUrl.bind(this)}>PVC Tape Biocon Electric PVC Tape</li>
                     <li id="copper-clad-aluminium-wire" onClick={this.getUrl.bind(this)}>Copper Clad Aluminum Wire</li>
                     <li id="electric-insulating-materials" onClick={this.getUrl.bind(this)}>Electric Insulating Materials</li>
                     <li id="kraft-paper" onClick={this.getUrl.bind(this)}>Kraft Paper</li>

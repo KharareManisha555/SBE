@@ -8,7 +8,6 @@ class Footer extends Component{
         }
     } 
 
-
     render(){
         return(
             <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
@@ -16,7 +15,7 @@ class Footer extends Component{
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 footer">
                         <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                             <h3>About us</h3>
-                            Aaraar Mittal & Sons is one of the fastest growing distributors and supplier of winding wires and insulating Material that is used for manufacturing state of the art electronics and electrical equipments that are used across the industries. Aaraar Mittal & Sons is specialized in providing site specific solutions, custom made to meet the clients’ specific power needs, by carefully matching power supply
+                            <p>Shri Balaji Electricals established in the year <b>1980 at Mumbai, Maharashtra</b>, We “<b>Shri Balaji Electricals</b>” are a <b>Sole Proprietorship</b> firm, engaged as the foremost <b>Wholesaler And Trader of PVC Tapes, Fiberglass Sleevings, Insulating Paper and All Types Of Insulating Material</b>. Our products are high in demand due to their premium quality and affordable prices. Furthermore, we ensure to timely deliver these products to our clients, through this we have gained a huge clients base in the market.</p>
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-3 col-xs-12 sitemap">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -33,19 +32,27 @@ class Footer extends Component{
                         </div>
                         <div className="col-lg-4 col-md-4 col-sm-3 col-xs-12">
                             <h3>Get In Touch</h3>
-                            <h4>AARAAR Mittal & Sons</h4>
-                            Address : 1501, Bhagirath Palace, Chandni
+                            <h4><b>Shri Balaji Electricals</b></h4>
+                            <b>Address:</b> 
                             <br/>
-                            Chowk, Delhi - 110006.
+                            Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400002, Maharashtra, India
                             <br/>
-                            Mob. : +91-9810186920
+                            <b>Mobile No.:</b>
                             <br/>
-                            Phone : +91-11-23861453, 23867094, 23873556
+                                1. Suresh Ahuja - 9920047380,
                             <br/>
-                            E-mail : rrshobit@gmail.com
+                                2. Manoj Ahuja - 9820031782,
+                            <br/>
+                                3. Abhishek Ahuja - 9820695966,
+                            <br/>
+                                4. Kanaya Ahuja - 7506300835
+                            <br/>
+                            <b>E-mail :</b>
+                            <br/>
+                            shribalajielectricals63@gmail.com, ahujap63@yahoo.com
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBorderLine">
-                            © 2017 AARAAR Mittal & Sons. All rights reserved. 
+                            © 2019 Shri Balaji Electricals. All rights reserved. 
                         </div>
                     </div>
                 </div>
