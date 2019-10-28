@@ -15,7 +15,7 @@ class Sidebar extends Component {
     getUrl(event){
         var id = event.target.id;
         this.props.subBlockDataUrl(id);
-        this.props.history.push(id);
+        this.props.history.push('/sbe/'+id);
     }
     render() {
         return (
