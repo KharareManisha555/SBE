@@ -23,15 +23,14 @@ class Sitemap extends Component{
                         <li><a href="/products">Products</a>
                             <ul>
                                 <li><a href="/sbe/winding-wire-of-copper-aluminium">PVC Tape Biocon Electric PVC Tape</a></li>
-                                <li><a href="/sbe/copper-clad-aluminium-wire">Copper Clad Aluminum Wire</a></li>
-                                <li><a href="/sbe/electric-insulating-materials">Electric Insulating Materials</a></li>
+                                <li><a href="/sbe/copper-clad-aluminium-wire">Super Enamelled Copper Wires</a></li>
+                                <li><a href="/sbe/electric-insulating-materials">Insulated Fiberglass Sleevings</a></li>
                                 <li><a href="/sbe/kraft-paper">Kraft Paper</a></li>
-                                <li><a href="/sbe/press-pahn-paper">Press Pahn Paper</a></li>
-                                <li><a href="/sbe/nomex-du-pont">"F" & "H" Nomex-DU Pont</a></li>
-                                <li><a href="/sbe/crepe-paper">Crepe Paper</a></li>
-                                <li><a href="/sbe/sleeving-and-cotton-tape">Sleeving "B" to "H" Class & Cotton Tape</a></li>
-                                <li><a href="/sbe/polyster-garware">Polyster Garware</a></li>
-                                <li><a href="/sbe/dr-beck-resins-hardener-varnishes">Dr Beck Resins Hardener & Varnishes</a></li>
+                                <li><a href="/sbe/press-pahn-paper">Gdr Presspahn Paper</a></li>
+                                <li><a href="/sbe/nomex-du-pont">Nomex Insulation Paper</a></li>
+                                <li><a href="/sbe/crepe-paper">Electrical Insulation Kraft Paper</a></li>
+                                <li><a href="/sbe/polyster-garware">Garware Polyester Film</a></li>
+                                <li><a href="/sbe/dr-beck-resins-hardener-varnishes">Elmo Luft 1A - Varnish and Thinner</a></li>
                             </ul>
                         </li>
                         <li><a href="/contact-us">Contact us</a></li>

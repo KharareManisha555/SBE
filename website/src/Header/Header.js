@@ -36,8 +36,8 @@ class Header extends Component {
                     <h1 className="col-lg-8 col-md-8 col-sm-12 col-xs-12 whiteColor">Shri Balaji Electricals</h1>
                     <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Call us :</b> +91-9820695966</span>
                     <span className="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 whiteColor"><b>Email-id :</b> ahujap63@yahoo.com</span>
-                    <a href="https://www.facebook.com/Shri-Balaji-Electricals-101417767921726/notifications/"><i className="fa fa-facebook socialFacebook pull-right"></i></a>
-                    <a href="https://www.indiamart.com/shri-balaji-electrical-maharashtra/"><img src="/images/Indiamart.png" width="50" className="pull-right"/></a>
+                    <a href="https://www.facebook.com/Shri-Balaji-Electricals-101417767921726/notifications/"><i className="fa fa-facebook socialFacebook pull-right" title="Go to Facebook page"></i></a>
+                    <a href="https://www.indiamart.com/shri-balaji-electrical-maharashtra/"><img src="/images/Indiamart.png" width="30" title="Go to India Mart profile" className="pull-right"/></a>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <nav className="navbar sbeHeader">
