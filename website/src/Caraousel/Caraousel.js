@@ -71,19 +71,19 @@ export default class Caraousel extends Component {
   caraouselData() {
     return [
       {
-        image: "/images/pic10.jpg",
+        image: "/images/img1.jpg",
       },
       {
-        image: "/images/pic3.jpg",
+        image: "/images/img8.jpg",
       },
       {
-        image: "/images/pic4.jpg",
+        image: "/images/img3.jpg",
       },
       {
-        image: "/images/pic2.jpg",
+        image: "/images/img5.jpg",
       },
       {
-        image: "/images/pic5.jpg",
+        image: "/images/img6.jpg",
       }
     ]
 

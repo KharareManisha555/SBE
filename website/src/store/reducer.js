@@ -10,7 +10,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'PVC Tape',
             title2 : 'Biocon Electric PVC Tape',
-            image : '/images/PVC INSULATION TAPE.jpg',
+            image : '/images/img1.jpg',
             para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
                     'Biocon Electric PVC Tape',
@@ -46,7 +46,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Super Enamelled',
             title2 : 'Copper Wires',
-            image : '/images/Super Enamelled Copper Wires.jpg',
+            image : '/images/img2.jpg',
             para1 : 'Super Enamelled Copper Wires',  
             para2 : [
                     'Rs 550 / Kilogram',
@@ -63,7 +63,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Insulated',
             title2 : 'Fiberglass Sleevings',
-            image : '/images/Sleevings.jpg',
+            image : '/images/img3.jpg',
             para1 : 'Insulated Fiberglass Sleevings',
             para2 : [
                     'Rs 1 / Meter',
@@ -84,7 +84,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Kraft',
             title2 : 'Paper',
-            image : '/images/pic4.jpg',
+            image : '/images/img4.jpg',
             para1 : 'Electrical Grade Insulating Kraft Paper that we supply is made from excellent grade of virgin fibers. These raw materials are imported from different countries. These are widely used as an insulation material of copper and aluminum wires. Apart from this these are also used in winding of transformer, motor, rotor coils.',
             para2 : []
         };
@@ -93,7 +93,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Gdr',
             title2 : 'Presspahn Paper',
-            image : '/images/Presspahn paper.jpg',
+            image : '/images/img5.jpg',
             para1 : 'Gdr Presspahn Paper',
             para2 : [
                     'Rs 375 / Kilogram',
@@ -110,7 +110,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Nomex',
             title2 : 'Insulation Paper',
-            image : '/images/Nomex Insulation Paper.jpg',
+            image : '/images/img6.jpg',
             para1 : 'Nomex Insulation Paper',
             para2 : [
                     'Rs 730 / Kg',
@@ -128,7 +128,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Electrical Insulation',
             title2 : 'Kraft Paper',
-            image : '/images/Cotton Tape.jpg',
+            image : '/images/img7.jpg',
             para1 : 'Electrical Insulation Kraft Paper',
             para2 : [
                     'Rs 95 / Kilogram',
@@ -146,7 +146,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Garware',
             title2 : 'Polyester Film',
-            image : '/images/Polyster Film.jpg',
+            image : '/images/img8.jpg',
             para1 : "Garware Polyester Film",
             para2 : [
                     'Rs 150 / Kilogram',
@@ -167,7 +167,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Elmo Luft 1A -',
             title2 : 'Varnish and Thinner',
-            image : '/images/pic10.jpg',
+            image : '/images/img9.jpg',
             para1 : 'Elmo Luft 1A - Varnish and Thinner',
             para2 : [
                     'Rs 185 / Litre',
