@@ -99,7 +99,11 @@
     margin-bottom: 0px !important;
   }
   .slide{
-    height: auto;
+    height: 94px;
+  }
+  .slide div {
+      height: 65px;
+      background-size: 100%;
   }
 }
 .caraouselcontentheader h1{
