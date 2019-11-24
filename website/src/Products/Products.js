@@ -8,44 +8,40 @@ class Products extends Component{
         this.state={
             products : [
                 {
-                    image : "/images/pic10.jpg",
-                    title : " Copper Clad Aluminum <br/> Wire"
+                    image : "/images/img1.jpg",
+                    title : "PVC Tape Biocon <br/>Electric PVC Tape"
                 },
                 {
-                    image : "/images/pic2.jpg",
-                    title : "Electric Insulating <br/> Materials"
+                    image : "/images/img9.jpg",
+                    title : "Elmo Luft 1A -<br/> Varnish and Thinner"
                 },
                 {
-                    image : "/images/pic3.jpg",
-                    title : "Winding Wire of Copper / <br/> Aluminum"
+                    image : "/images/img8.jpg",
+                    title : "Garware Polyester<br/> Film"
                 },
                 {
-                    image : "/images/pic4.jpg",
+                    image : "/images/img7.jpg",
+                    title : "Electrical Insulation<br/> Kraft Paper"
+                },
+                {
+                    image : "/images/img6.jpg",
+                    title : "Nomex Insulation<br/> Paper"
+                },
+                {
+                    image : "/images/img5.jpg",
+                    title : 'Gdr Presspahn<br/> Paper'
+                },
+                {
+                    image : "/images/img4.jpg",
                     title : "Kraft Paper"
                 },
                 {
-                    image : "/images/pic5.jpg",
-                    title : "Press Pahn Paper"
+                    image : "/images/img3.jpg",
+                    title : 'Insulated Fiberglass<br/> Sleevings'
                 },
                 {
-                    image : "/images/pic6.jpg",
-                    title : 'F" & "H" Nomex-DU Pont'
-                },
-                {
-                    image : "/images/pic7.jpg",
-                    title : "Crepe Paper"
-                },
-                {
-                    image : "/images/pic8.jpg",
-                    title : 'Sleeving "B" to "H" Class <br/> & Cotton Tape'
-                },
-                {
-                    image : "/images/pic9.jpg",
-                    title : "Dr Beck Resins Hardener <br/> & Varnishes"
-                },
-                {
-                    image : "/images/pic10.jpg",
-                    title : "Polyster Garware"
+                    image : "/images/img2.jpg",
+                    title : "Super Enamelled <br/> Copper Wires"
                 },
             ]
         }
@@ -56,7 +52,7 @@ class Products extends Component{
         return(
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 products">
-                    <h3><span className="whiteColor">Our </span> Products</h3>
+                    <h3><span className="blackColor">Our </span> Products</h3>
                     <br/>
                     <ul className="">
                         {

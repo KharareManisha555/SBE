@@ -34,7 +34,7 @@ class Subblock extends Component{
         return(
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 block">
-                    <h3><span className="whiteColor">{this.state.title1}</span>&nbsp;{this.state.title2}</h3>
+                    <h3><span className="blackColor">{this.state.title1}</span>&nbsp;{this.state.title2}</h3>
                     <br/>
                     <div className="block-images">
                         <img data-toggle="modal" data-target={"#showModal"} className="img-bordered" src={this.state.image} alt=""/>
@@ -56,7 +56,7 @@ class Subblock extends Component{
                         {this.state.para2 ?
                             this.state.para2.map((data, index)=>{
                                 return(
-                                    <div className="whiteColor" dangerouslySetInnerHTML={{ __html:data}}></div>
+                                    <div className="blackColor" dangerouslySetInnerHTML={{ __html:data}}></div>
                                 );
                             })
                             :

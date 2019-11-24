@@ -1,6 +1,14 @@
 body {
   font-family: var(--primary-font);
-  background-color: #000 !important;
+  background-color: #fff !important;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  /* background-image: url("/images/banner3.jpg") */
+}
+#root{
+  /* height: 1500px;
+    background-size: cover;
+    background: #f5f5f5de; */
 }
 .orangeBackground{
   background: #f3b94d;
@@ -10,11 +18,12 @@ body {
 }
 :root {
   --orange-background:#f3b94d;
-  --black-background:#000;
+  --orange-hover:#f39c43;
+  --black-background:#333;
   --white-background:#fff;
   --orange-color:#f3b94d;
   --white-color:#fff;
-  --black-color:#000;
+  --black-color:#333;
   --primary-font:Arial, Helvetica, sans-serif;
 }
 .blackBg{
@@ -22,6 +31,9 @@ body {
 }
 .whiteColor{
   color: var(--white-color) !important;
+}
+.blackColor{
+  color: var(--black-color) !important;
 }
 .NOpadding{
   padding-left: 0px;
@@ -45,6 +57,3 @@ body {
 .error{
   color: #ff730d !important;
 } 
-.an{
-  
-}

@@ -12,13 +12,13 @@
     border: 1px solid #ddd;
 }
 .para1{
-    color: var(--white-color);
+    color: var(--black-color);
     text-align: justify;
     font-size: 14px;
     line-height: 22px;
 }
 .para2{
-    color: var(--white-color);
+    color: var(--black-color);
     text-align: justify;
     font-size: 14px;
     line-height: 22px;

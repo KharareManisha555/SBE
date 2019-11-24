@@ -63,7 +63,7 @@ class Enquiry extends Component{
                 },
                 address: {
                     required: true,
-                    regxaddress: /^[A-Za-z][A-Za-z0-9\-\s]*$/,
+                    regxaddress: /^[A-Za-z0-9_@./#&+-]/,
                 },
                 emailId: {
                     required: true,
@@ -78,25 +78,25 @@ class Enquiry extends Component{
                 },
             },
             errorPlacement: function (error, element) {
-              if (element.attr("name") == "firstName") {
+              if (element.attr("name") === "firstName") {
                 error.insertAfter("#firstName");
               }
-              if (element.attr("name") == "lastName") {
+              if (element.attr("name") === "lastName") {
                 error.insertAfter("#lastName");
               }
-              if (element.attr("name") == "companyName") {
+              if (element.attr("name") === "companyName") {
                 error.insertAfter("#companyName");
               }
-              if (element.attr("name") == "address") {
+              if (element.attr("name") === "address") {
                 error.insertAfter("#address");
               }
-              if (element.attr("name") == "emailId") {
+              if (element.attr("name") === "emailId") {
                 error.insertAfter("#emailId");
               }
-              if (element.attr("name") == "mobileNumber") {
+              if (element.attr("name") === "mobileNumber") {
                 error.insertAfter("#mobileNumber");
               }
-              if (element.attr("name") == "requirement") {
+              if (element.attr("name") === "requirement") {
                 error.insertAfter("#requirement");
               }
             }
@@ -120,7 +120,7 @@ class Enquiry extends Component{
             "captcha"       : this.state.captcha
         }
         if($('#enquiry').valid()){
-            if(this.state.captchaVerified == true){
+            if(this.state.captchaVerified === true){
                 axios.post('/api/users/sendmail', formValues)
                 .then((response)=>{
                     swal("Your Request Submitted successfully");
@@ -172,7 +172,7 @@ class Enquiry extends Component{
         return(
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 enquiry">
-                    <h2><span className="whiteColor">Enq</span>uiry</h2>
+                    <h2><span className="blackColor">Enq</span>uiry</h2>
                     <br/>
                     <form id="enquiry" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 enquiryform">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 formInput">
@@ -189,7 +189,7 @@ class Enquiry extends Component{
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
                             <label>Phone No: <span className="mandatory">*</span></label><br/>
-                            <input value={this.state.mobileNumber} ref="mobileNumber" name="mobileNumber" id="mobileNumber" onChange={this.handleChange.bind(this)} className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
+                            <input value={this.state.mobileNumber} maxLength="10" ref="mobileNumber" name="mobileNumber" id="mobileNumber" onChange={this.handleChange.bind(this)} className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
                             <label>Address: <span className="mandatory">*</span></label><br/>

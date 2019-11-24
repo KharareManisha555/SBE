@@ -99,10 +99,10 @@ export default class Caraousel extends Component {
                 this.caraouselData().map((data, index) => {
                   return (
                     <div key={index} className="slide col-lg-3 col-md-3 col-sm-3 col-xs-3" data-slide={index}>
-                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-                          <img src={data.image} className="img-responsive" />
-                        </div>
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding" style={{backgroundImage : `URL(`+data.image+`)`}}>
+                        {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                           <img src={data.image} className="img-responsive" /> 
+                        </div> */}
                       </div>
                     </div>
                   );

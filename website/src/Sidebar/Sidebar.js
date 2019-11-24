@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect }        from 'react-redux';
-import {Link, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import "./Sidebar.css";
 
 class Sidebar extends Component {
@@ -22,15 +22,15 @@ class Sidebar extends Component {
             <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 content">
                 <ul className="sidebarUL">
                     <h2>Our Products</h2>
-                    <li id="winding-wire-of-copper-aluminium" onClick={this.getUrl.bind(this)}>PVC Tape Biocon Electric PVC Tape</li>
-                    <li id="copper-clad-aluminium-wire" onClick={this.getUrl.bind(this)}>Super Enamelled Copper Wires</li>
-                    <li id="electric-insulating-materials" onClick={this.getUrl.bind(this)}>Insulated Fiberglass Sleevings</li>
-                    <li id="kraft-paper" onClick={this.getUrl.bind(this)}>Kraft Paper</li>
-                    <li id="press-pahn-paper" onClick={this.getUrl.bind(this)}>Gdr Presspahn Paper</li>
-                    <li id="nomex-du-pont" onClick={this.getUrl.bind(this)}>Nomex Insulation Paper</li>
-                    <li id="crepe-paper" onClick={this.getUrl.bind(this)}>Electrical Insulation Kraft Paper</li>
-                    <li id="polyster-garware" onClick={this.getUrl.bind(this)}>Garware Polyester Film</li>
-                    <li id="dr-beck-resins-hardener-varnishes" onClick={this.getUrl.bind(this)}>Elmo Luft 1A - Varnish and Thinner</li>
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <li key={i} id={data.toLowerCase().replace(/ /g, '-')}  onClick={this.getUrl.bind(this)}>{data}</li>
+                            );
+                        })
+                    }
+                    
+                    
                 </ul>
             </div>
         )
@@ -39,6 +39,7 @@ class Sidebar extends Component {
 const mapStateToProps = (state)=>{
     return {
         subBlockData      : state.subBlockData,
+        sidebarList       : state.sidebarList
     }
   }
   const mapDispachToProps = (dispach) =>{

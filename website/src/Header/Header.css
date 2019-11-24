@@ -12,7 +12,7 @@
 }
 .socialTwitter{
   cursor: pointer;
-  color: var(--white-color) !important;
+  color: var(--black-color) !important;
   padding: 4px;
   font-size: 20px;
   background: #44cef7;
@@ -26,7 +26,7 @@
 }
 .socialGogle{
   cursor: pointer;
-  color: var(--white-color) !important;
+  color: var(--black-color) !important;
   padding: 4px;
   font-size: 20px;
   background: #f75d44;
@@ -44,16 +44,16 @@
   color: var(--white-color);
 }
 .sbeNav>li:hover, .sbeNav>li>a:hover{
-  background-color: var(--black-background);
-  color: var(--white-color) !important;
+  background-color: var(--orange-background);
+  color: var(--black-color) !important;
 }
 .sbeDropdown{
   background: var(--orange-background);
 }
 .sbeDropdown>li>a:hover, .sbeDropdown>li:hover{
-  color: var(--white-color) !important;
+  color: var(--black-color) !important;
   text-decoration: none;
-  background-color: var(--black-background);
+  background-color: var(--orange-background);
 }
 .sbeDropdown>li{
   border-top: 1px solid #ecdbbb;

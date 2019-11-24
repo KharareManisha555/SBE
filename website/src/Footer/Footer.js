@@ -33,23 +33,13 @@ class Footer extends Component{
                         <div className="col-lg-4 col-md-4 col-sm-3 col-xs-12">
                             <h3>Get In Touch</h3>
                             <h4><b>Shri Balaji Electricals</b></h4>
-                            <b>Address:</b> 
+                            <b>Address :</b>&nbsp;
+                            
+                            Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400002, Maharashtra, India.
                             <br/>
-                            Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400002, Maharashtra, India
+                            <b>Mobile No. :</b> +91-9920047380
                             <br/>
-                            <b>Mobile No.:</b>
-                            <br/>
-                                1. Suresh Ahuja - 9920047380,
-                            <br/>
-                                2. Manoj Ahuja - 9820031782,
-                            <br/>
-                                3. Abhishek Ahuja - 9820695966,
-                            <br/>
-                                4. Kanaya Ahuja - 7506300835
-                            <br/>
-                            <b>E-mail :</b>
-                            <br/>
-                            shribalajielectricals63@gmail.com, ahujap63@yahoo.com
+                            <b>E-mail :</b> shribalajielectricals63@gmail.com
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBorderLine">
                             © 2019 Shri Balaji Electricals. All rights reserved. 

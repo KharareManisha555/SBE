@@ -1,15 +1,26 @@
 
 
 const initialState = {
-	subBlockData	 	: {},
+    subBlockData	 	: {},
+    sidebarList         : [
+        "PVC Tape Biocon Electric PVC Tape",
+        "Super Enamelled Copper Wires",
+        "Insulated Fiberglass Sleevings",
+        "Kraft Paper",
+        "Gdr Presspahn Paper",
+        "Nomex Insulation Paper",
+        "Electrical Insulation Kraft Paper",
+        "Garware Polyester Film",
+        "Elmo Luft 1A - Varnish and Thinne",
+    ]
 }
 
 const reducer = (state = initialState,action) => {
     const newState = {...state}; 
-	if(action.type === "winding-wire-of-copper-aluminium"){
+	if(action.type === "pvc-tape-biocon-electric-pvc-tape"){
 		newState.subBlockData 		= {
-            title1 : 'PVC Tape',
-            title2 : 'Biocon Electric PVC Tape',
+            title1 : 'PVC Tape Biocon',
+            title2 : 'Electric PVC Tape',
             image : '/images/img1.jpg',
             para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
@@ -42,7 +53,7 @@ const reducer = (state = initialState,action) => {
                 ]
         };
     }
-    if(action.type === "copper-clad-aluminium-wire"){
+    if(action.type === "super-enamelled-copper-wires"){
 		newState.subBlockData 		= {
             title1 : 'Super Enamelled',
             title2 : 'Copper Wires',
@@ -59,7 +70,7 @@ const reducer = (state = initialState,action) => {
                     ]
         };
     }
-    if(action.type === "electric-insulating-materials"){
+    if(action.type === "insulated-fiberglass-sleevings"){
 		newState.subBlockData 		= {
             title1 : 'Insulated',
             title2 : 'Fiberglass Sleevings',
@@ -89,7 +100,7 @@ const reducer = (state = initialState,action) => {
             para2 : []
         };
     }
-    if(action.type === "press-pahn-paper"){
+    if(action.type === "gdr-presspahn-paper"){
 		newState.subBlockData 		= {
             title1 : 'Gdr',
             title2 : 'Presspahn Paper',
@@ -106,7 +117,7 @@ const reducer = (state = initialState,action) => {
                     ]
         };
     }
-    if(action.type === "nomex-du-pont"){
+    if(action.type === "nomex-insulation-paper"){
 		newState.subBlockData 		= {
             title1 : 'Nomex',
             title2 : 'Insulation Paper',
@@ -124,7 +135,7 @@ const reducer = (state = initialState,action) => {
             ]
         };
     }
-    if(action.type === "crepe-paper"){
+    if(action.type === "electrical-insulation-kraft-paper"){
 		newState.subBlockData 		= {
             title1 : 'Electrical Insulation',
             title2 : 'Kraft Paper',
@@ -142,7 +153,7 @@ const reducer = (state = initialState,action) => {
                 ]
         };
     }
-    if(action.type === "polyster-garware"){
+    if(action.type === "garware-polyester-film"){
 		newState.subBlockData 		= {
             title1 : 'Garware',
             title2 : 'Polyester Film',
@@ -163,7 +174,7 @@ const reducer = (state = initialState,action) => {
                     ]
         };
     }
-    if(action.type === "dr-beck-resins-hardener-varnishes"){
+    if(action.type === "elmo-luft-1a---varnish-and-thinne"){
 		newState.subBlockData 		= {
             title1 : 'Elmo Luft 1A -',
             title2 : 'Varnish and Thinner',

@@ -3,7 +3,7 @@
     text-align: justify;
     font-size: 14px;
     font-family: var(--primary-font);
-    color: #000;
+    color: var(--white-color);
     overflow: hidden;
     margin-top: 30px;
 }
@@ -17,7 +17,7 @@
 .sitemap ul>li>a{
     font-size: 14px;
     font-family: var(--primary-font);
-    color:var(--black-color);
+    color:var(--white-color);
 }
 .sitemap ul>li>a:hover{
     text-decoration: none;

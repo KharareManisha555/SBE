@@ -4,7 +4,7 @@
 }
 .price-bodyhover:hover .upbuttonhover{
   color: #fff!important;
-  background-color: #f19000;
+  background-color:var(--orange-background);
   transition-duration:0.7s;
   cursor: pointer;
 }
@@ -42,6 +42,14 @@
   transform:scale(0.75) translate(-190%,0px) perspective( 750px ) rotateY(0deg);
   box-shadow:0 15px 25px rgba(0,0,0,0.1);
   z-index:1;
+}
+.slide{
+  border: 5px solid #f5f5f5;
+  padding: 10px 10px;
+}
+.slide div{
+  height: 220px;
+  background-size: 100%;
 }
 .slide--center {
   transform:scale(1) translate(0px, 0px) perspective( 750px ) rotateY(0deg);
@@ -99,8 +107,8 @@ font-size: 41px;
 }
 .caraouselcontentheader hr{
   height: 2px;
-  border: 1px solid #f19000;
-  background-color: #f19000;
+  border: 1px solid var(--orange-background);
+  background-color: var(--orange-background);
 }
 .caraouselfoot{
   pointer-events: auto!important;
@@ -108,7 +116,8 @@ font-size: 41px;
 }
 .caraouselblock{
   background-size: 100% 100%;
-  background-image: url("/images/banner1.jpg");
+  /* background-image: url("/images/banner1.jpg"); */
+  /* background: #f5f5f561; */
   height: 400px;
   padding: 20px 50px;
   margin-bottom: 60px;

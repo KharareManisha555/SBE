@@ -11,15 +11,15 @@
 .formInput label{
     margin-bottom: 10px;
     font-weight: normal;
-    color: var(--white-color);
+    color: var(--black-color);
 }
 .formBtn button{
     padding: 7px 24px;
     font-size: 14px;
     font-weight: normal;
     color: #fff;
-    background: #ff6d00 none repeat scroll 0 0;
-    border: 1px solid #ff6d00;
+    background: var(--orange-background) none repeat scroll 0 0;
+    border: 1px solid var(--orange-background);
     border-radius: 2px;
     cursor: pointer;
 }
@@ -29,12 +29,12 @@
     font-size: 14px;
     font-weight: normal;
     color: #fff;
-    background: #e22000;
-    border: 1px solid #e22000;
+    background: var(--orange-hover);
+    border: 1px solid var(--orange-background);
     border-radius: 2px;
 }
 .captchaError{
-    color: #ff730d !important;
+    color: var(--orange-background) !important;
 }
 @media only screen and (max-width : 736px){
     .enquiry{
