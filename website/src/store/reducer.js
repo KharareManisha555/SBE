@@ -1,5 +1,3 @@
-
-
 const initialState = {
     subBlockData	 	: {},
     sidebarList         : [
@@ -24,32 +22,24 @@ const reducer = (state = initialState,action) => {
             image : '/images/img1.jpg',
             para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
-                    'Biocon Electric PVC Tape',
+                    '<li> Biocon Electric PVC Tape </li>',
+                    '<li> Minimum Order Quantity: 40 Roll </li>',
+                    '<li> Rs 6.3 / Roll </li>',
+                    '<li> Adhesive Type: Single Sided </li>',
+                    '<li> Material     : PVC </li>',
+                    '<li> Brand        : Biocon </li>',
+                    '<li> Tape Length  : 0-10 m </li>',
+                    '<li> Tape Width   : 0-20 mm </li>',
+                    '<li> Biocon Electric PVC Tape </li><br/>',
 
-                    'Minimum Order Quantity: 40 Roll',
-                    'Rs 6.3 / Roll',
-
-                    'Adhesive Type: Single Sided',
-                    'Material     : PVC',
-                    'Brand        : Biocon',
-                    'Tape Length  : 0-10 m',
-                    'Tape Width   : 0-20 mm',
-
-                    'Biocon Electric PVC Tape',
-
-                    'Additional Information:',
-
-                    'Packaging Details: 20 nos per box',
-
-                    'Wonder PVC Tape',
-                    'Rs 5 / PieceGet Latest Price',
-
-                    'Minimum Order Quantity: 1500 Piece',
-
-                    'Brand   Wonder',
-                    'Tape Length 0-10 m',
-
-                    'Wonder PVC Tape'
+                    '<b>Additional Information :</b>',
+                    '<li> Packaging Details: 20 nos per box  </li>',
+                    '<li> Wonder PVC Tape </li>',
+                    '<li> Rs 5 / PieceGet Latest Price </li>',
+                    '<li> Minimum Order Quantity: 1500 Piece </li>',
+                    '<li> Brand   Wonder </li>',
+                    '<li> Tape Length 0-10 m </li>',
+                    '<li> Wonder PVC Tape </li>'
                 ]
         };
     }
@@ -60,13 +50,13 @@ const reducer = (state = initialState,action) => {
             image : '/images/img2.jpg',
             para1 : 'Super Enamelled Copper Wires',  
             para2 : [
-                    'Rs 550 / Kilogram',
-                    'Diameter: 1-3 mm',
-                    'Wire Gauge: 5-10',
-                    'Shape: Round',
-                    'Insulation Type: Enameled',
-                    'Material: Copper',
-                    'Super Enamelled Copper Wires'
+                    '<li> Rs 550 / Kilogram </li>',
+                    '<li> Diameter: 1-3 mm </li>',
+                    '<li> Wire Gauge: 5-10 </li>',
+                    '<li> Shape: Round </li>',
+                    '<li> Insulation Type: Enameled </li>',
+                    '<li> Material: Copper </li>',
+                    '<li> Super Enamelled Copper Wires </li>'
                     ]
         };
     }
@@ -77,17 +67,18 @@ const reducer = (state = initialState,action) => {
             image : '/images/img3.jpg',
             para1 : 'Insulated Fiberglass Sleevings',
             para2 : [
-                    'Rs 1 / Meter',
-                    'Minimum Order Quantity: 1000 Meter',
-                    'Usage/Application',
-                    'Motors,Wire Harness and Various other Insulating Purposes',
-                    'Brand: Lotus',
-                    'Voltage: 600V',
-                    'Material: Fiberglass',
-                    'Max Temperature Resistance: -30 to 155 Degree Celsius',
-                    'Insulated Fiberglass Sleevings',
-                    '<b>Additional Information:</b>',
-                    '• Packaging Details: 100 mtrs',
+                    '<li> Rs 1 / Meter </li>',
+                    '<li> Minimum Order Quantity: 1000 Meter </li>',
+                    '<li> Usage/Application </li>',
+                    '<li> Motors,Wire Harness and Various other Insulating Purposes </li>',
+                    '<li> Brand: Lotus </li>',
+                    '<li> Voltage: 600V </li>',
+                    '<li> Material: Fiberglass </li>',
+                    '<li> Max Temperature Resistance: -30 to 155 Degree Celsius </li>',
+                    '<li> Insulated Fiberglass Sleevings </li><br/>',
+
+                    '<b>Additional Information :</b>',
+                    '<li> Packaging Details: 100 mtrs </li>',
             ]
         };
     }
@@ -107,13 +98,13 @@ const reducer = (state = initialState,action) => {
             image : '/images/img5.jpg',
             para1 : 'Gdr Presspahn Paper',
             para2 : [
-                    'Rs 375 / Kilogram',
-                    'GSM: 150 - 200',
-                    'Size: 1/2 to 5 inch',
-                    'Packaging Type: Roll',
-                    'Material: Kraft Paper',
-                    'Length: 0-200 m',
-                    'For Power transformers, also used in the label industry',
+                    '<li> Rs 375 / Kilogram </li>',
+                    '<li> GSM: 150 - 200 </li>',
+                    '<li> Size: 1/2 to 5 inch </li>',
+                    '<li> Packaging Type: Roll </li>',
+                    '<li> Material: Kraft Paper </li>',
+                    '<li> Length: 0-200 m </li>',
+                    '<li> For Power transformers, also used in the label industry </li>',
                     ]
         };
     }
@@ -124,13 +115,13 @@ const reducer = (state = initialState,action) => {
             image : '/images/img6.jpg',
             para1 : 'Nomex Insulation Paper',
             para2 : [
-                    'Rs 730 / Kg',
-                    'Minimum Order Quantity: 50 Kg',
-                    'Material: Dupond',
-                    'Packaging Type: Roll',
-                    'Tensile Strength: 100 mpa',
-                    'Brand: Nomex',
-                    'Thickness: 0.25 - 2 mm',
+                    '<li> Rs 730 / Kg </li>',
+                    '<li> Minimum Order Quantity: 50 Kg </li>',
+                    '<li> Material: Dupond </li>',
+                    '<li> Packaging Type: Roll </li>',
+                    '<li> Tensile Strength: 100 mpa </li>',
+                    '<li> Brand: Nomex </li>',
+                    '<li> Thickness: 0.25 - 2 mm </li><br/>',
                     '<b>Nomex Paper Class F</b> is Nomex Polyester Nomex composite, which is used for electrical motor insulation. It is made using Original DuPont Nomex paper. Nomex Polyester Paper gives best thermal performance in terms of electrical insulating properties.',
             ]
         };
@@ -142,14 +133,14 @@ const reducer = (state = initialState,action) => {
             image : '/images/img7.jpg',
             para1 : 'Electrical Insulation Kraft Paper',
             para2 : [
-                    'Rs 95 / Kilogram',
-                    'Paper Type: Kraft Paper',
-                    'Packaging Type: Roll',
-                    'Pulp Material: Sulfate Pulp',
-                    'Thickness: 0.05 mm - 0.25 mm',
-                    'Pattern: Plain',
-                    'Temperature: 105 Degree C',
-                    'Electrical Insulation Kraft Paper',
+                    '<li> Rs 95 / Kilogram </li>',
+                    '<li> Paper Type: Kraft Paper </li>',
+                    '<li> Packaging Type: Roll </li>',
+                    '<li> Pulp Material: Sulfate Pulp </li>',
+                    '<li> Thickness: 0.05 mm - 0.25 mm </li>',
+                    '<li> Pattern: Plain </li>',
+                    '<li> Temperature: 105 Degree C </li>',
+                    '<li> Electrical Insulation Kraft Paper </li>',
                 ]
         };
     }
@@ -160,17 +151,18 @@ const reducer = (state = initialState,action) => {
             image : '/images/img8.jpg',
             para1 : "Garware Polyester Film",
             para2 : [
-                    'Rs 150 / Kilogram',
-                    'Minimum Order Quantity: 50 Kilogram',
-                    'Brand: Garware',
-                    'Packaging Type: Roll',
-                    'Usage/Application: Industrial',
-                    'Thickness: 25, 50, 75, 100, 125, 187, 250, 350 Microns',
-                    'Material: Polyester',
-                    'Core Weight: 2.2 kg',
-                    'Garware Polyester Film',
-                    '<b>Additional Information:</b>',
-                    '• Packaging Details: 50 Kgs',
+                    '<li> Rs 150 / Kilogram </li>',
+                    '<li> Minimum Order Quantity: 50 Kilogram </li>',
+                    '<li> Brand: Garware </li>',
+                    '<li> Packaging Type: Roll </li>',
+                    '<li> Usage/Application: Industrial </li>',
+                    '<li> Thickness: 25, 50, 75, 100, 125, 187, 250, 350 Microns </li>',
+                    '<li> Material: Polyester </li>',
+                    '<li> Core Weight: 2.2 kg </li>',
+                    '<li> Garware Polyester Film </li><br/>',
+
+                    '<b>Additional Information :</b>',
+                    '<li> Packaging Details: 50 Kgs </li>',
                     ]
         };
     }
@@ -181,9 +173,9 @@ const reducer = (state = initialState,action) => {
             image : '/images/img9.jpg',
             para1 : 'Elmo Luft 1A - Varnish and Thinner',
             para2 : [
-                    'Rs 185 / Litre',
-                    'Minimum Order Quantity: 15 Litre',
-                    'Dr.beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.' 
+                    '<li> Rs 185 / Litre</li>',
+                    '<li> Minimum Order Quantity: 15 Litre</li><br/>',
+                    'Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.' 
                     ]
         };
     }
