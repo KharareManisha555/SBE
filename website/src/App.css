@@ -17,11 +17,11 @@ body {
   text-align: right;
 }
 :root {
-  --orange-background:#f3b94d;
-  --orange-hover:#f39c43;
+  --orange-background:#BC9E13;
+  --orange-hover:#BC9E13;
   --black-background:#333;
   --white-background:#fff;
-  --orange-color:#f3b94d;
+  --orange-color:#BC9E13;
   --white-color:#fff;
   --black-color:#333;
   --primary-font:Arial, Helvetica, sans-serif;

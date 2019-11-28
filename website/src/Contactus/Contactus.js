@@ -18,17 +18,17 @@ class Contactus extends Component{
                     <br/>
                     <h4 className="blackColor">Shri Balaji Electricals</h4>
                     <p>
-                        <b>Address :</b> Shop No. 2, Peerbhoy Building, Ground Floor,<br/> 93, Princess Street, Lohar Chawl,<br/> Mumbai-400002, Maharashtra, India.<br/><br/>
+                        <b>Address:</b> Shop No. 2, Peerbhoy Building, Ground Floor,<br/> 93, Princess Street, Lohar Chawl,<br/> Mumbai-400 002, Maharashtra, India.<br/><br/>
                         
                         <b>Mobile No.:</b>
                         <br/>
-                            1. Suresh Ahuja : +91-9920047380,
+                            1. Suresh Ahuja : +91 99200 47380,
                         <br/>
-                            2. Manoj Ahuja : +91-9820031782,
+                            2. Manoj Ahuja : +91 98200 31782,
                         <br/>
-                            3. Abhishek Ahuja : +91-9820695966,
+                            3. Abhishek Ahuja : +91 98206 95966,
                         <br/>
-                            4. Kanaya Ahuja : +91-7506300835
+                            4. Kanaya Ahuja : +91 75063 00835
                         <br/>
                         <br/>
                         <b>E-mail :</b>

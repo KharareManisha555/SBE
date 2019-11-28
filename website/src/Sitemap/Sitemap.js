@@ -17,11 +17,11 @@ class Sitemap extends Component{
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 site">
                     <h2><span className="blackColor">Site </span> Map</h2>
                     <br/>
-                    <ul className="">
+                    <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-us">About us</a></li>
                         <li><a href="/products">Products</a>
-                            <ul>
+                            <ul className="padLeft15">
                             {
                                 this.props.sidebarList.map((data, i)=>{
                                     return(
