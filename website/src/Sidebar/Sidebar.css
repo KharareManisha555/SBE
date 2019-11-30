@@ -27,3 +27,7 @@
     color: var(--black-color);
     text-decoration: none;
 }
+.sidebarUL li:hover {
+    cursor: pointer;
+    color: var(--orange-background)
+}
