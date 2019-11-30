@@ -35,7 +35,7 @@ class Header extends Component {
             <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sbeHead">
                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <img src="images/sbelogo.jpg" className="pull-left marRight15" width="100"/>
+                        <img src="/images/sbelogo.jpg" className="pull-left marRight15" width="100"/>
                         <h1 className="marTop10 blackColor">Shri Balaji Electricals</h1>
                     </div>
                     <div className="col-lg-6">

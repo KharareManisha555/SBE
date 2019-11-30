@@ -72,18 +72,23 @@ export default class Caraousel extends Component {
     return [
       {
         image: "/images/img1.jpg",
+        title: "PVC Tape Biocon Electric PVC Tape"
       },
       {
         image: "/images/img8.jpg",
+        title: "Garware Polyester Film"
       },
       {
         image: "/images/img3.jpg",
+        title: "Insulated Fiberglass Sleevings"
       },
       {
         image: "/images/img5.jpg",
+        title: "Gdr Presspahn Paper"
       },
       {
         image: "/images/img6.jpg",
+        title: "Nomex Insulation Paper"
       }
     ]
 
@@ -100,10 +105,11 @@ export default class Caraousel extends Component {
                   return (
                     <div key={index} className="slide col-lg-3 col-md-3 col-sm-3 col-xs-3" data-slide={index}>
                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding" style={{backgroundImage : `URL(`+data.image+`)`}}>
-                        {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
-                           <img src={data.image} className="img-responsive" /> 
-                        </div> */}
+                        
+                          <span className="caraouselText">{data.title}</span>
+                        
                       </div>
+                      
                     </div>
                   );
                 })
