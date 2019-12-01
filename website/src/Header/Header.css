@@ -66,6 +66,14 @@
 .marTop10{
   margin-top: 10px !important;
 }
-.marRight15{
-  margin-right: 15px !important;
+.marRight12{
+  margin-right: 12px !important;
+}
+@media only screen and (min-width : 992px) and (max-width : 1200px ){
+  .marTop10{
+    margin-top: 10px !important;
+  }
+}
+.marTopN10{
+  margin-top: -30px !important;
 }

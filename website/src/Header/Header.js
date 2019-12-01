@@ -34,15 +34,21 @@ class Header extends Component {
         return (
             <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sbeHead">
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <img src="/images/sbelogo.jpg" className="pull-left marRight15" width="100"/>
+                    <div className="col-lg-8 col-md-7 col-sm-12 hidden-xs">
+                        <img src="/images/sbelogo.jpg" className="pull-left marRight12" width="100"/>
                         <h1 className="marTop10 blackColor">Shri Balaji Electricals</h1>
                     </div>
-                    <div className="col-lg-6">
-                        <span className="marTop10 col-lg-7 col-lg-offset-3 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 blackColor"><b>Call us :</b> +91-9820695966</span>
-                        <span className="col-lg-7 col-lg-offset-3 col-md-3 col-md-offset-1 col-sm-12 col-xs-12 blackColor"><b>Email-id :</b> ahujap63@yahoo.com</span>
-                        <a href="https://www.facebook.com/Shri-Balaji-Electricals-101417767921726/notifications/"><i className="fa fa-facebook socialFacebook pull-right" title="Go to Facebook page"></i></a>
-                        <a href="https://www.indiamart.com/shri-balaji-electrical-maharashtra/"><img src="/images/Indiamart.png" alt="" width="30" title="Go to India Mart profile" className="pull-right"/></a>
+                    <div className="hidden-lg hidden-md hidden-sm">
+                        <img src="/images/sbelogo.jpg" className="pull-left marRight12" width="100"/>
+                        <h1 className="marTop10 blackColor">Shri Balaji Electricals</h1>
+                    </div>
+                    <div className="col-lg-4 col-md-5 ">
+                        <span className="marTop10 col-lg-12 col-md-9 col-sm-12 col-xs-12 blackColor"><b>Call us :</b> +91-9820695966</span>
+                        <span className="col-lg-12 col-md-9 col-sm-12 col-xs-12 blackColor"><b>Email :</b> ahujap63@yahoo.com</span>
+                        <div className="col-lg-4 col-md-4 pull-right marTopN10">
+                            <a href="https://www.facebook.com/Shri-Balaji-Electricals-101417767921726/notifications/"><i className="fa fa-facebook socialFacebook pull-right" title="Go to Facebook page"></i></a>
+                            <a href="https://www.indiamart.com/shri-balaji-electrical-maharashtra/"><img src="/images/Indiamart.png" alt="" width="30" title="Go to India Mart profile" className="pull-right"/></a>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -68,7 +74,6 @@ class Header extends Component {
                                                 this.props.sidebarList.map((data, i)=>{
                                                     return(
                                                         <li key={i}><a href={'/sbe/'+data.toLowerCase().replace(/ /g, '-')}>{data}</a></li>
-                                                       
                                                     );
                                                 })
                                             }

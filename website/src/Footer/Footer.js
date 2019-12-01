@@ -43,12 +43,12 @@ class Footer extends Component{
                         </div>
                         
                     </div>
-                    <div className="bgFooter col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBorderLine">
+                    <div className="textFooter col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBorderLine">
                         <div className="pull-left">
                             © 2019 Shri Balaji Electricals. All rights reserved. 
                         </div>
                         <div className="pull-right">
-                            Designed and developed by <i>Diamond Corp</i>. 
+                            Designed and developed by <i>Diamond Corp.</i>. 
                         </div>
                     </div>
                 </div>
