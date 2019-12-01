@@ -58,7 +58,7 @@ class Products extends Component{
                         {
                             this.state.products.map((data, index)=>{
                                 return(
-                                    <li key="index" className="">
+                                    <li key="index" className="effectImg">
                                         <img src={data.image} data-toggle="modal" data-target={"#showModal-"+index} className="productImg"/>
                                         <div className="imgTitle" dangerouslySetInnerHTML={{__html: data.title}}></div>
                                         <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal-"+index} role="dialog">

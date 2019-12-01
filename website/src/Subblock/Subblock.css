@@ -6,6 +6,7 @@
 .block-images{
     cursor: pointer;
     overflow: hidden;
+    width: fit-content;
     margin-bottom: 10px;
 }
 .img-bordered{

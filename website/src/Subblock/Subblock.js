@@ -36,7 +36,7 @@ class Subblock extends Component{
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 block">
                     <h3><span className="blackColor">{this.state.title1}</span>&nbsp;{this.state.title2}</h3>
                     <br/>
-                    <div className="block-images">
+                    <div className="block-images effectImg">
                         <img data-toggle="modal" data-target={"#showModal"} className="img-bordered" src={this.state.image} alt=""/>
                     </div>
                     <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal"} role="dialog">
