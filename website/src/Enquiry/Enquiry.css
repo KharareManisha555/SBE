@@ -8,6 +8,13 @@
 .formInput{
     margin-bottom: 15px;
 }
+.formInput input, .formInput textarea{
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.formInput input{
+    height: 30px;
+}
 .formInput label{
     margin-bottom: 10px;
     font-weight: normal;
