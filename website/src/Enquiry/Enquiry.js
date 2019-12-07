@@ -176,11 +176,11 @@ class Enquiry extends Component{
                     <br/>
                     <form id="enquiry" className="col-lg-12 col-md-12 col-sm-12 col-xs-12 enquiryform">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 formInput">
-                            <label>Name: <span className="mandatory">*</span></label><br/>
+                            <label>First Name: <span className="mandatory">*</span></label><br/>
                             <input value={this.state.firstName} ref="firstName" name="firstName" id="firstName" onChange={this.handleChange.bind(this)} placeholder="First Name" className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
                         </div>
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 formInput">
-                            <label>&nbsp;<span className="mandatory"></span></label><br/>
+                            <label>Last Name:<span className="mandatory">*</span></label><br/>
                             <input value={this.state.lastName} ref="lastName" name="lastName" id="lastName" onChange={this.handleChange.bind(this)} placeholder="Last Name" className="col-lg-12 col-md-12 col-sm-12 col-xs-12" />
                         </div>
                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 formInput">
