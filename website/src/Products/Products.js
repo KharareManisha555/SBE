@@ -68,7 +68,7 @@ class Products extends Component{
                                                 <div className="modal-content blockModal col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 NOpadding">
                                                     <div className="modal-body blockModal-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                         <button type="button" className="cancelModal pull-right" data-dismiss="modal" data-target={"#showModal-"+index}>&times;</button>
-                                                        <img src={data.image} className="img-responsive" alt="" />
+                                                        <img src={data.image}  alt="" />
                                                         <div dangerouslySetInnerHTML={{__html: data.title}}></div>
                                                     </div>
                                                 </div>
