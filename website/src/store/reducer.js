@@ -2,14 +2,16 @@ const initialState = {
     subBlockData	 	: {},
     sidebarList         : [
         "PVC Tape Biocon Electric PVC Tape",
-        "Super Enamelled Copper Wires",
-        "Insulated Fiberglass Sleevings",
-        "Kraft Paper",
         "Gdr Presspahn Paper",
         "Nomex Insulation Paper",
+        "Insulated Fiberglass Sleevings",
         "Electrical Insulation Kraft Paper",
         "Garware Polyester Film",
         "Elmo Luft 1A - Varnish and Thinne",
+        "Super Enamelled Copper Wires",
+        "Rubber Compound",
+        "Fibre Glass Products",
+        "Soldering Wires & Stics"
     ]
 }
 
@@ -19,27 +21,27 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'PVC Tape Biocon',
             title2 : 'Electric PVC Tape',
-            image : '/images/img1.jpg',
+            image : ['/images/img1.jpg', '/images/defaultImage.png', '/images/defaultImage.png',],
             para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
                     '<li> Biocon Electric PVC Tape </li>',
-                    '<li> Minimum Order Quantity: 40 Roll </li>',
-                    '<li> Rs 6.3 / Roll </li>',
+                    '<li> Minimum Order Quantity: 1200 Roll </li>',
+                    // '<li> Rs 6.3 / Roll </li>',
                     '<li> Adhesive Type: Single Sided </li>',
                     '<li> Material     : PVC </li>',
                     '<li> Brand        : Biocon </li>',
                     '<li> Tape Length  : 0-10 m </li>',
-                    '<li> Tape Width   : 0-20 mm </li>',
-                    '<li> Biocon Electric PVC Tape </li><br/>',
+                    '<li> Tape Width   : 0-20 mm </li><br/>',
+                    // '<li> Biocon Electric PVC Tape </li><br/>',
 
                     '<b>Additional Information :</b>',
-                    '<li> Packaging Details: 20 nos per box  </li>',
-                    '<li> Wonder PVC Tape </li>',
-                    '<li> Rs 5 / PieceGet Latest Price </li>',
+                    '<li> Packaging Details: 30 nos per box  </li>',
+                    // '<li> Wonder PVC Tape </li>',
+                    // '<li> Rs 5 / PieceGet Latest Price </li>',
                     '<li> Minimum Order Quantity: 1500 Piece </li>',
-                    '<li> Brand   Wonder </li>',
+                    // '<li> Brand   Wonder </li>',
                     '<li> Tape Length 0-10 m </li>',
-                    '<li> Wonder PVC Tape </li>'
+                    // '<li> Wonder PVC Tape </li>'
                 ]
         };
     }
@@ -47,7 +49,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Super Enamelled',
             title2 : 'Copper Wires',
-            image : '/images/img2.jpg',
+            image : ['/images/img2.jpg'],
             para1 : 'Super Enamelled Copper Wires',  
             para2 : [
                     '<li> Rs 550 / Kilogram </li>',
@@ -64,7 +66,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Insulated',
             title2 : 'Fiberglass Sleevings',
-            image : '/images/img3.jpg',
+            image : ['/images/img3.jpg'],
             para1 : 'Insulated Fiberglass Sleevings',
             para2 : [
                     '<li> Rs 1 / Meter </li>',
@@ -82,20 +84,12 @@ const reducer = (state = initialState,action) => {
             ]
         };
     }
-    if(action.type === "kraft-paper"){
-		newState.subBlockData 		= {
-            title1 : 'Kraft',
-            title2 : 'Paper',
-            image : '/images/img4.jpg',
-            para1 : 'Electrical Grade Insulating Kraft Paper that we supply is made from excellent grade of virgin fibers. These raw materials are imported from different countries. These are widely used as an insulation material of copper and aluminum wires. Apart from this these are also used in winding of transformer, motor, rotor coils.',
-            para2 : []
-        };
-    }
+    
     if(action.type === "gdr-presspahn-paper"){
 		newState.subBlockData 		= {
             title1 : 'Gdr',
             title2 : 'Presspahn Paper',
-            image : '/images/img5.jpg',
+            image : ['/images/img5.jpg'],
             para1 : 'Gdr Presspahn Paper',
             para2 : [
                     '<li> Rs 375 / Kilogram </li>',
@@ -112,7 +106,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Nomex',
             title2 : 'Insulation Paper',
-            image : '/images/img6.jpg',
+            image : ['/images/img6.jpg'],
             para1 : 'Nomex Insulation Paper',
             para2 : [
                     '<li> Rs 730 / Kg </li>',
@@ -130,7 +124,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Electrical Insulation',
             title2 : 'Kraft Paper',
-            image : '/images/img7.jpg',
+            image : ['/images/img7.jpg'],
             para1 : 'Electrical Insulation Kraft Paper',
             para2 : [
                     '<li> Rs 95 / Kilogram </li>',
@@ -148,7 +142,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Garware',
             title2 : 'Polyester Film',
-            image : '/images/img8.jpg',
+            image : ['/images/img8.jpg'],
             para1 : "Garware Polyester Film",
             para2 : [
                     '<li> Rs 150 / Kilogram </li>',
@@ -170,7 +164,7 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Elmo Luft 1A -',
             title2 : 'Varnish and Thinner',
-            image : '/images/img9.jpg',
+            image : ['/images/img9.jpg'],
             para1 : 'Elmo Luft 1A - Varnish and Thinner',
             para2 : [
                     '<li> Rs 185 / Litre</li>',
@@ -183,8 +177,35 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Polyster',
             title2 : 'Garware',
-            image : '/images/pic9.jpg',
+            image : ['/images/pic9.jpg'],
             para1 : "We are Authorized Distributor of Polyster Film - Garware , which is made up of premier quality raw material thus, confirming to the international standards. It Can be Supplied as per specific sizes of customer's need.",
+            para2 : []
+        };
+    }
+    if(action.type === "rubber-compound"){
+		newState.subBlockData 		= {
+            title1 : "Rubber",
+            title2 : "Compound",
+            image : ['/images/defaultImage.png'],
+            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
+            para2 : []
+        };
+    }
+    if(action.type === "fibre-glass-products"){
+		newState.subBlockData 		= {
+            title1 : "Fibre Glass",
+            title2 : "Products",
+            image : ['/images/defaultImage.png'],
+            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
+            para2 : []
+        };
+    }
+    if(action.type === "soldering-wires-&-stics"){
+		newState.subBlockData 		= {
+            title1 : "Soldering Wires",
+            title2 : "and Stics",
+            image : ['/images/defaultImage.png'],
+            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
             para2 : []
         };
     }

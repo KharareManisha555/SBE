@@ -36,34 +36,47 @@ class Subblock extends Component{
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 block">
                     <h3><span className="blackColor">{this.state.title1}</span>&nbsp;{this.state.title2}</h3>
                     <br/>
-                    <div className="block-images effectImg">
-                        <img data-toggle="modal" data-target={"#showModal"} className="img-bordered" src={this.state.image} alt=""/>
-                    </div>
-                    <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal"} role="dialog">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div className="modal-content blockModal col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 NOpadding">
-                                <div className="modal-body blockModal-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <button type="button" className="cancelModal pull-right" data-dismiss="modal" data-target={"#showModal"}>&times;</button>
-                                    <img src={this.state.image} alt="" className="img-responsive"/>
-                                    <h4>{this.state.title1} {this.state.title2}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br/>
-                    <p className="para1">{this.state.para1}</p>
-                    <p className="para2">
-                        {this.state.para2 ?
-                            this.state.para2.map((data, index)=>{
+                    {
+                        this.state.image && this.state.image.length > 0?
+                            this.state.image.map((data, i)=>{
                                 return(
-                                    <div className="blackColor" dangerouslySetInnerHTML={{ __html:data}}></div>
+                                    <div key={i} className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOpadding">
+                                        <div key={i} className="block-images effectImg col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                                            <img  data-toggle="modal" data-target={"#showModal"+i} className="img-bordered img-responsive" src={data} alt=""/>
+                                        </div>
+                                        <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal"+i} role="dialog">
+                                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div className="modal-content blockModal col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 NOpadding">
+                                                    <div className="modal-body blockModal-body col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                        <button type="button" className="cancelModal pull-right" data-dismiss="modal" data-target={"#showModal"}>&times;</button>
+                                                        <img src={data} alt=""/>
+                                                        <h4>{this.state.title1} {this.state.title2}</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 );
                             })
-                            :
-                            null
-                        }
-                    </p>
+                        :
+                        null
+                    }
                     
+                    <br/>
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
+                        <p className="para1">{this.state.para1}</p>
+                        <p className="para2">
+                            {this.state.para2 ?
+                                this.state.para2.map((data, index)=>{
+                                    return(
+                                        <div className="blackColor" dangerouslySetInnerHTML={{ __html:data}}></div>
+                                    );
+                                })
+                                :
+                                null
+                            }
+                        </p>
+                    </div>
                 </div>
             </div>
         )
