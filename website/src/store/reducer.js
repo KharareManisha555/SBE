@@ -8,10 +8,10 @@ const initialState = {
         "Electrical Insulation Kraft Paper",
         "Garware Polyester Film",
         "Elmo Luft 1A - Varnish and Thinne",
-        "Super Enamelled Copper Wires",
         "Rubber Compound",
         "Fibre Glass Products",
-        "Soldering Wires & Stics"
+        "Soldering Wires & Stics",
+        "Super Enamelled Copper Wires",
     ]
 }
 
