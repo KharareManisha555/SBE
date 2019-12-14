@@ -21,7 +21,20 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'PVC Tape Biocon',
             title2 : 'Electric PVC Tape',
-            image : ['/images/img1.jpg', '/images/defaultImage.png', '/images/defaultImage.png',],
+            imageData : [
+                {
+                    image : '/images/img1.jpg',
+                    name : 'PVC Tape Biocon Electric PVC Tape'
+                }, 
+                {
+                    image : '/images/biocon-electric-pvc-tape.jpg',
+                    name : 'PVC Tape Biocon Electric PVC Tape'
+                }, 
+                {
+                    image : '/images/biocon-electric-pvc-tape2.jpg',
+                    name : 'PVC Tape Biocon Electric PVC Tape'
+                }, 
+            ],
             para1 : 'Our range of products include Biocon Electric PVC Tape and Wonder PVC Tape.',
             para2 : [
                     '<li> Biocon Electric PVC Tape </li>',
@@ -49,16 +62,37 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Super Enamelled',
             title2 : 'Copper Wires',
-            image : ['/images/img2.jpg'],
-            para1 : 'Super Enamelled Copper Wires',  
+            imageData : [
+                {
+                    image : '/images/img2.jpg',
+                    name : 'Super Enamelled Copper Wires'
+                }, 
+                {
+                    image : '/images/super-enamelled-copper-wires.jpg',
+                    name : 'Super Enamelled Copper Wires'
+                }, 
+                {
+                    image : '/images/super-enamelled-copper-wires2.jpg',
+                    name : 'Steel Alloy Wire'
+                }, 
+            ],
+            // para1 : 'Super Enamelled Copper Wires',  
             para2 : [
+                    '<b>Super Enamelled Copper Wires</b>',
                     '<li> Rs 550 / Kilogram </li>',
                     '<li> Diameter: 1-3 mm </li>',
                     '<li> Wire Gauge: 5-10 </li>',
                     '<li> Shape: Round </li>',
                     '<li> Insulation Type: Enameled </li>',
                     '<li> Material: Copper </li>',
-                    '<li> Super Enamelled Copper Wires </li>'
+                    '<li> Super Enamelled Copper Wires </li><br/>',
+
+                    '<b>Steel Alloy Wire</b>',
+                    '<li>Material	Steel</li>',
+                    '<li>Usage/Application	Electrical Industry</li>',
+                    '<li>Thickness	0.50 mm To 6 mm</li>',
+                    '<li>Single Piece Length	3 meter, 6 meter</li>',
+                    '<li>Tensile Strength	280Mpa</li>'
                     ]
         };
     }
@@ -66,7 +100,16 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Insulated',
             title2 : 'Fiberglass Sleevings',
-            image : ['/images/img3.jpg'],
+            imageData : [
+                {
+                    image : '/images/img3.jpg',
+                    name : 'Insulated Fiberglass Sleevings'
+                }, 
+                {
+                    image : '/images/fiberglass-sleevings1.jpg',
+                    name : 'Heat Shrinkable Sleevs'
+                }, 
+            ],
             para1 : 'Insulated Fiberglass Sleevings',
             para2 : [
                     '<li> Rs 1 / Meter </li>',
@@ -89,7 +132,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Gdr',
             title2 : 'Presspahn Paper',
-            image : ['/images/img5.jpg'],
+            imageData : [
+                {
+                    image : '/images/img5.jpg',
+                    name : 'Gdr Presspahn Paper'
+                }, 
+            ],
             para1 : 'Gdr Presspahn Paper',
             para2 : [
                     '<li> Rs 375 / Kilogram </li>',
@@ -106,7 +154,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Nomex',
             title2 : 'Insulation Paper',
-            image : ['/images/img6.jpg'],
+            imageData : [
+                {
+                    image : '/images/img6.jpg',
+                    name : 'Nomex Insulation Paper'
+                }, 
+            ],
             para1 : 'Nomex Insulation Paper',
             para2 : [
                     '<li> Rs 730 / Kg </li>',
@@ -124,7 +177,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Electrical Insulation',
             title2 : 'Kraft Paper',
-            image : ['/images/img7.jpg'],
+            imageData : [
+                {
+                    image : '/images/img7.jpg',
+                    name : 'Electrical Insulation Kraft Paper'
+                }, 
+            ],
             para1 : 'Electrical Insulation Kraft Paper',
             para2 : [
                     '<li> Rs 95 / Kilogram </li>',
@@ -134,7 +192,6 @@ const reducer = (state = initialState,action) => {
                     '<li> Thickness: 0.05 mm - 0.25 mm </li>',
                     '<li> Pattern: Plain </li>',
                     '<li> Temperature: 105 Degree C </li>',
-                    '<li> Electrical Insulation Kraft Paper </li>',
                 ]
         };
     }
@@ -142,7 +199,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Garware',
             title2 : 'Polyester Film',
-            image : ['/images/img8.jpg'],
+            imageData : [
+                {
+                    image : '/images/img8.jpg',
+                    name : 'Garware Polyester Film'
+                }, 
+            ],
             para1 : "Garware Polyester Film",
             para2 : [
                     '<li> Rs 150 / Kilogram </li>',
@@ -164,7 +226,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Elmo Luft 1A -',
             title2 : 'Varnish and Thinner',
-            image : ['/images/img9.jpg'],
+            imageData : [
+                {
+                    image : '/images/img9.jpg',
+                    name : 'Elmo Luft 1A - Varnish and Thinner'
+                }, 
+            ],
             para1 : 'Elmo Luft 1A - Varnish and Thinner',
             para2 : [
                     '<li> Rs 185 / Litre</li>',
@@ -177,7 +244,12 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : 'Polyster',
             title2 : 'Garware',
-            image : ['/images/pic9.jpg'],
+            imageData : [
+                {
+                    image : '/images/img9.jpg',
+                    name : 'Polyster Garware'
+                }, 
+            ],
             para1 : "We are Authorized Distributor of Polyster Film - Garware , which is made up of premier quality raw material thus, confirming to the international standards. It Can be Supplied as per specific sizes of customer's need.",
             para2 : []
         };
@@ -186,27 +258,99 @@ const reducer = (state = initialState,action) => {
 		newState.subBlockData 		= {
             title1 : "Rubber",
             title2 : "Compound",
-            image : ['/images/defaultImage.png'],
-            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-            para2 : []
+            imageData : [
+                {
+                    image : '/images/rubber-compound2.jpg',
+                    name : 'Rubber" Compound'
+                }, 
+                {
+                    image : '/images/rubber-compound1.jpg',
+                    name : 'Rubber" Compound'
+                }, 
+            ],
+            para1 : 'Leading Wholesale Trader of Double Poly Premium Rubber Compound from Mumbai.',
+            para2 : [
+                '<li>Rs 165 / Kilogram</li>',
+                '<li>Hardness :	18-90shoreA</li>',
+                '<li>Material :	Rubber</li>',
+                '<li>Feature :	Heatproof, Dustproof, Waterproof</li>',
+                '<li>Elongation :	More than 850%</li>',
+                '<li>Quality Type :	Premium Quality</li>',
+            ]
         };
     }
     if(action.type === "fibre-glass-products"){
 		newState.subBlockData 		= {
             title1 : "Fibre Glass",
             title2 : "Products",
-            image : ['/images/defaultImage.png'],
-            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-            para2 : []
+            imageData : [
+                {
+                    image : '/images/fiberGlassRedTape.jpg',
+                    name : 'Red Polyester Tape'
+                },
+                {
+                    image : '/images/fiberGlasspolyester-tape.jpg',
+                    name : 'White Polyester Tape'
+                },
+                {
+                    image : '/images/fiberGlass-industrial-fibreglass-cables.jpg',
+                    name : 'Industrial Fibreglass Cables'
+                }, 
+            ],
+            para1 : 'Offering you a complete choice of products which include Red Polyester Tape, White Polyester Tape and Industrial Fibreglass Cables.',
+            para2 : [
+                '<b>Red Polyester Tape</b>',
+                '<li>Rs 45 / Roll</li>',
+                '<li>Adhesive Type :	Single Sided</li>',
+                '<li>Color :	Red</li>',
+                '<li>Usage/Application :	Packaging</li>',
+                '<li>Tape Length :	20-30 m</li>',
+                '<li>Tape Width :	0-20 mm</li><br/>',
+
+                '<b>White Polyester Tape</b>',
+                '<li>Rs 45 / Roll</li>',
+                '<li>Usage/Application :	Polyester woven tape is used in binding of field coil of induction motors, transformers etc</li>',
+                '<li>Type :	Single Sided</li>',
+                '<li>Tape Width :	6 mm to 25 mm</li>',
+                '<li>Thickness :	0.15 to 0.36 mm</li>',
+                '<li>Material :	Polyester</li><br/>',
+
+                '<b>Industrial Fibreglass Cables</b>',
+                '<li>Rs 7.5 / Meter</li>',
+                '<li>Material :	Fiberglass</li>',
+                '<li>Number Of Core :	2 and 3</li>',
+                '<li>Temperature Range :	155-180 Degree C</li>',
+                '<li>Diameter :	0.50 sqmm - 240 sqmm</li>',
+                '<li>Heating Capacity :	500 Degree Celsius</li>',
+            ]
         };
     }
     if(action.type === "soldering-wires-&-stics"){
 		newState.subBlockData 		= {
             title1 : "Soldering Wires",
             title2 : "and Stics",
-            image : ['/images/defaultImage.png'],
-            para1 : 'Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Ciceros De Finibus Bonorum et Malorum for use in a type specimen book.',
-            para2 : []
+            imageData : [
+                {
+                    image : '/images/solder-sticks.jpeg',
+                    name : 'Soldering Wires and Stics'
+                },
+                // {
+                //     image : '/images/fiberGlasspolyester-tape.jpg',
+                //     name : 'White Polyester Tape'
+                // },
+                // {
+                //     image : '/images/fiberGlass-industrial-fibreglass-cables.jpg',
+                //     name : 'Industrial Fibreglass Cables'
+                // }, 
+            ],
+            para1 : 'Soldering Wires and Stics',
+            para2 : [
+                '<li>Rs 1,100/Kg</li>',
+                '<li>Material :	Non Ferrous</li>',
+                '<li>Working Temperature ( degree Celsius) : 	200-250 degree Celsius</li>',
+                '<li>Usage :	Wave Soldering, Hot Dip Soldering</li>',
+                '<li>Surface Treatment :	Coated</li>',
+            ]
         };
     }
 	return newState;
