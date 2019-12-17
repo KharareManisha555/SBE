@@ -36,11 +36,11 @@ class Header extends Component {
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 sbeHead">
                     <div className="col-lg-8 col-md-7 col-sm-12 hidden-xs">
                         <img src="/images/sbelogo.jpg" className="pull-left marRight12" width="100"/>
-                        <h1 className="marTop10 blackColor">Shri Balaji Electricals</h1>
+                        <h1 className="marTop10 blackColor headerLogo">Shri Balaji Electricals</h1>
                     </div>
                     <div className="hidden-lg hidden-md hidden-sm">
                         <img src="/images/sbelogo.jpg" className="pull-left marRight12" width="100"/>
-                        <h1 className="marTop10 blackColor">Shri Balaji Electricals</h1>
+                        <h1 className="marTop10 blackColor headerLogo">Shri Balaji Electricals</h1>
                     </div>
                     <div className="col-lg-4 col-md-5 ">
                         <span className="marTop10 col-lg-12 col-md-9 col-sm-12 col-xs-12 blackColor"><b>Call us :</b> +91-9820695966</span>

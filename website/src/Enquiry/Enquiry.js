@@ -121,7 +121,14 @@ class Enquiry extends Component{
         }
         if($('#enquiry').valid()){
             if(this.state.captchaVerified === true){
-                axios.post('/api/users/sendmail', formValues)
+                axios({
+                    method  : 'post',
+                    url     : 'http://shribalajielectricals.in/phpapi/index.php',
+                    data    : formValues,
+                    headers : {
+                        'content-type': 'application/x-www-form-urlencoded',
+                   },
+                })
                 .then((response)=>{
                     swal("Your Request Submitted successfully");
                     this.setState({

@@ -60,7 +60,7 @@ class Products extends Component{
                                 return(
                                     <div>
                                         <li key="index" className="effectImg">
-                                            <img src={data.image} data-toggle="modal" data-target={"#showModal-"+index} className="productImg img-responsive"/>
+                                            <img alt="" src={data.image} data-toggle="modal" data-target={"#showModal-"+index} className="productImg img-responsive"/>
                                             <div className="imgTitle" dangerouslySetInnerHTML={{__html: data.title}}></div>
                                         </li>
                                         <div className="modal fade col-lg-12 col-md-12 col-sm-12 col-xs-12" id={"showModal-"+index} role="dialog">

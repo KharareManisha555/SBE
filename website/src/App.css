@@ -25,6 +25,7 @@ body {
   --white-color:#fff;
   --black-color:#333;
   --primary-font:Arial, Helvetica, sans-serif;
+  --custom-font:'FjallaOne-Regular';
 }
 .blackBg{
   background-color: var(--black-background) !important; 
@@ -57,3 +58,7 @@ body {
 .error{
   color: #ff730d !important;
 } 
+@font-face{
+  font-family:'FjallaOne-Regular';
+  src: url("/fonts/FjallaOne-Regular.ttf");
+}

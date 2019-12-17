@@ -9,6 +9,9 @@
 .sbeHead{
   padding: 15px 0px !important;
 }
+.headerLogo{
+  font-family: var(--custom-font);
+}
 .socialTwitter{
   cursor: pointer;
   color: var(--black-color) !important;
