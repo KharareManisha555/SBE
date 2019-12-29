@@ -15,7 +15,7 @@ import Sidebar    from '../Sidebar/Sidebar.js';
 import Homepage   from '../Homepage/Homepage.js';
 import Aboutus    from '../Aboutus/Aboutus.js';
 import Products   from '../Products/Products.js';
-import Subblock   from '../Subblock/Subblock.js';
+import Ticket   from '../Ticket/Ticket.js';
 import Contactus  from '../Contactus/Contactus.js';
 import Enquiry    from '../Enquiry/Enquiry.js';
 import Sitemap    from '../Sitemap/Sitemap.js';
@@ -25,7 +25,7 @@ const WebLayout = () => (
     <Route path="/"           exact strict component={ Homepage } /> 
     <Route path="/about-us"   exact strict component={ Aboutus } /> 
     <Route path="/products"   exact strict component={ Products } /> 
-    <Route path="/sbe/:url"   exact strict component={ Subblock } /> 
+    <Route path="/sbe/:url"   exact strict component={ Ticket } /> 
     <Route path="/contact-us" exact strict component={ Contactus } /> 
     <Route path="/enquiry"    exact strict component={ Enquiry } /> 
     <Route path="/sitemap"    exact strict component={ Sitemap } /> 

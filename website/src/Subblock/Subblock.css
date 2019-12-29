@@ -27,3 +27,6 @@
 .sidebarUL li{
     cursor: pointer;
 }
+.blockModal-body img{
+    margin: auto;
+}
