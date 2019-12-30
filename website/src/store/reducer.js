@@ -6,8 +6,9 @@ const initialState = {
         "Nomex Insulation Paper",
         "Insulated Fiberglass Sleevings",
         // "Electrical Insulation Kraft Paper",
+        "Cotton Tape",
         "Garware Polyester Film",
-        "Elmo Luft 1A - Varnish and Thinne",
+        "Insulation Varnish",
         "Rubber Compound",
         "Fibre Glass Products",
         "Soldering Wires & Stics",
@@ -38,7 +39,7 @@ const reducer = (state = initialState,action) => {
                     productName : "Wonder PVC Tape",
                     imageData : [
                         {
-                            image : '/images/biocon-electric-pvc-tape.jpg',
+                            image : '/images/wonder-tape.jpg',
                             name : 'Wonder PVC Tape'
                         }, 
                     ],
@@ -131,10 +132,40 @@ const reducer = (state = initialState,action) => {
             description : '',
             productData : [
                 {
-                    productName : "Kraft Paper",
+                    productName : "GDR Presspahn Paper",
                     imageData : [
                         {
                             image : '/images/img5.jpg',
+                            name : 'Kraft Paper'
+                        },  
+                    ],
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                },{
+                    productName : 'Black Leatheroid Paper - "Aspha" make',
+                    imageData : [
+                        {
+                            image : '/images/blackcraft.jpg',
+                            name : 'Black Leatheroid Paper'
+                        },  
+                    ],
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                },{
+                    productName : 'Undyed Leatheroid Paper - "Aspha" make',
+                    imageData : [
+                        {
+                            image : '/images/browncraft.jpg',
+                            name : 'Undyed Leatheroid Paper'
+                        },  
+                    ],
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                },{
+                    productName : "Khatema Kraft Paper",
+                    imageData : [
+                        {
+                            image : '/images/Khatema.jpg',
+                            name : 'Kraft Paper'
+                        },{
+                            image : '/images/Khatema1.jpeg',
                             name : 'Kraft Paper'
                         },  
                     ],
@@ -153,11 +184,26 @@ const reducer = (state = initialState,action) => {
                     productName : "Nomex Insulation Paper",
                     imageData : [
                         {
+                            image : '/images/Nomex-3.jpg',
+                            name : 'Nomex Insulation Paper'
+                        },{
                             image : '/images/img6.jpg',
+                            name : 'Nomex Insulation Paper'
+                        },{
+                            image : '/images/Nomex-1.jpg',
+                            name : 'Nomex Insulation Paper'
+                        },{
+                            image : '/images/Nomex-2.png',
                             name : 'Nomex Insulation Paper'
                         },  
                     ],
-                    productDetail : '<ul><li> Material: Dupond </li> <li> Packaging Type: Roll </li> <li> Tensile Strength: 100 mpa </li> <li> Brand: Nomex </li> <li> Thickness: 0.25 - 2 mm </li></ul>'
+                    productDetail : '<ul><li> Material: Dupond </li> <li> Packaging Type: Roll </li><li> Tensile Strength: 100 mpa </li><li> Brand: Nomex </li><li> Colour: Ivory </li><li> Thickness- 0.125 mm - 0.50 mm </li></ul><li> Dimensions of Rolls - 910 mm 10 mm </li><li> Film Thickness- 0.025 mm - 0.350 mm </li><li> Raw Material/ Composition: Nomex Aramid Paper / Polyester Film </li></ul>'
+
+
+
+
+
+
                 },
             ],
         };
@@ -180,7 +226,32 @@ const reducer = (state = initialState,action) => {
     //             },
     //         ],
     //     };
-    // }
+    // } 
+    if(action.type === "cotton-tape"){
+     newState.subBlockData       = {
+            title1 : 'Cotton',
+            title2 : 'Tape',
+            description : '',
+            productData : [
+                {
+                    productName : "Cotton Tape",
+                    imageData : [
+                        {
+                            image : '/images/img7.jpg',
+                            name : 'Cotton Tape'
+                        },{
+                            image : '/images/cttp.jpg',
+                            name : 'Cotton Tape'
+                        },{
+                            image : '/images/cttp1.jpg',
+                            name : 'Cotton Tape'
+                        },
+                    ],
+                    productDetail : '<ul><li>THICKNESS RANGE : 0.125 MM TO 0.9 MM</li><li>WIDTH RANGE : 6 MM TO 70 MM</li><li><b>Features:</b></li><ul><li>Tear resistance</li><li>Durability</li><li>Unmatched quality</li></ul><li><b>APPLICATIONS:</b></li><ul><li>Widely use in Current Transformer Industry</li><li>Motor Winding</li><li>C.T Making</li><li>Cable Insulation</li><li>Conductor wrapping</li><li>Connection wrapping</li><li>Armature protection cap</li><li>Interlayer coil insulation</li></ul>'
+                },
+            ],
+        };
+    }
     if(action.type === "garware-polyester-film"){
 		newState.subBlockData 		= {
             title1 : 'Garware',
@@ -200,21 +271,30 @@ const reducer = (state = initialState,action) => {
             ],
         };
     }
-    if(action.type === "elmo-luft-1a---varnish-and-thinne"){
+    if(action.type === "insulation-varnish"){
 		newState.subBlockData 		= {
-            title1 : 'Elmo Luft 1A -',
-            title2 : 'Varnish and Thinner',
-            description : 'Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.',
+            title1 : 'Insulation',
+            title2 : 'Varnish',
+            description : '',
             productData : [
                 {
-                    productName : "Elmo Luft 1A - Varnish and Thinner",
+                    productName : "Dr Beck - Elmo 1 A",
                     imageData : [
                         {
                             image : '/images/img9.jpg',
                             name : 'Elmo Luft 1A - Varnish and Thinner'
                         }, 
                     ],
-                    productDetail : '<ul><li> Minimum Order Quantity: 15 Litre</li></ul>'
+                    productDetail : '<ul><li> Minimum Order Quantity: 15 Litre</li><li>Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.</li></ul>'
+                },{
+                    productName : "Jyoti Insulating Varnish",
+                    imageData : [
+                        {
+                            image : '/images/img9.jpg',
+                            name : 'Elmo Luft 1A - Varnish and Thinner'
+                        }, 
+                    ],
+                    productDetail : '<ul><li>Offered varnish is processed using superior quality chemical compounds and the latest technology in line with industry norms. Furthermore, provided varnish is strictly tested by our quality controllers on several parameters before delivering to our customers. Our offered varnish is highly admired for its optimum quality and versatility.</li><li><b>Features:</b></li><ul><li>Superb bonding strength</li><li>Fast drying</li><li>Smooth surface</li></ul><li>Minimum Order Quantity: 15 Litre</li></ul>'
                 }
             ]
         };
