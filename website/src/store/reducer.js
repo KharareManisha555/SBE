@@ -29,7 +29,7 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/img1.jpg',
-                            name : 'Electric PVC Tape'
+                            name : 'Biocon PVC Tape'
                         },  
                         
                     ],
@@ -43,7 +43,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Wonder PVC Tape'
                         }, 
                     ],
-                    productDetail : '<ul><li> Packaging Details: 30 nos per box  </li><li> Adhesive Type: Single Sided </li><li> Material     : PVC </li><li> Brand        : Biocon </li><li> Tape Width   : 0-20 mm </li></ul>'
+                    productDetail : '<ul><li> Packaging Details: 30 nos per box  </li><li> Adhesive Type: Single Sided </li><li> Material     : PVC </li><li> Brand        : Wonder </li><li> Tape Width   : 0-20 mm </li></ul>'
                 },
                 {
                     productName : "Teflon tape",
@@ -57,7 +57,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Teflon tape'
                         }, 
                     ],
-                    productDetail : '<ul><li> Packaging Details: 30 nos per box  </li><li> Adhesive Type: Single Sided </li><li> Material     : PVC </li><li> Brand        : Biocon </li><li> Tape Width   : 0-20 mm </li></ul>'
+                    productDetail : '<ul><li> Packaging Details: 30 nos per box  </li><li> Adhesive Type: Single Sided </li><li> Material     : PVC </li><li> Brand        : Star, Champion and V grip </li><li> Tape Width   : 0-20 mm </li></ul>'
                 }
             ]
         };
@@ -109,17 +109,17 @@ const reducer = (state = initialState,action) => {
                             name : 'Insulated Fiberglass Sleevings'
                         }, 
                     ],
-                    productDetail : '<ul><li> Usage/Application </li> <li> Motors,Wire Harness and Various other Insulating Purposes </li> <li> Brand: Lotus </li> <li> Voltage: 600V </li> <li> Material: Fiberglass </li> <li> Max Temperature Resistance: -30 to 155 Degree Celsius </li> <li> Insulated Fiberglass Sleevings </li></ul>'
+                    productDetail : '<ul><li> Brand: Lotus </li> <li> Voltage: 600V </li> <li> Material: Fiberglass </li> <li> Max Temperature Resistance: -30 to 155 Degree Celsius </li> <li> Insulated Fiberglass Sleevings </li><li> Usage/Application : Motors,Wire Harness and Various other Insulating Purposes </li></ul>'
                 },
                 {
                     productName : "Heat Shrinkable Sleevs",
                     imageData : [
                         {
-                            image : '/images/fiberglass-sleevings1.jpg',
+                            image : '/images/shrinkSleeve.jpeg',
                             name : 'Heat Shrinkable Sleevs'
                         },
                     ],
-                    productDetail : '<ul><li> Packaging Details: 100 mtrs </li></ul>'
+                    productDetail : '<ul><li> Packaging Details: 100 mtrs </li><li> Brand : Woer </li></ul>'
                 },
             ],
         };
@@ -136,7 +136,7 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/img5.jpg',
-                            name : 'Kraft Paper'
+                            name : 'GDR Presspahn Paper'
                         },  
                     ],
                     productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
@@ -145,7 +145,7 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/blackcraft.jpg',
-                            name : 'Black Leatheroid Paper'
+                            name : 'Black Leatheroid Paper - "Aspha" make'
                         },  
                     ],
                     productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
@@ -154,7 +154,7 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/browncraft.jpg',
-                            name : 'Undyed Leatheroid Paper'
+                            name : 'Undyed Leatheroid Paper - "Aspha" make'
                         },  
                     ],
                     productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
@@ -163,10 +163,10 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/Khatema.jpg',
-                            name : 'Kraft Paper'
+                            name : 'Khatema Kraft Paper'
                         },{
                             image : '/images/Khatema1.jpeg',
-                            name : 'Kraft Paper'
+                            name : 'Khatema Kraft Paper'
                         },  
                     ],
                     productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
@@ -198,12 +198,6 @@ const reducer = (state = initialState,action) => {
                         },  
                     ],
                     productDetail : '<ul><li> Material: Dupond </li> <li> Packaging Type: Roll </li><li> Tensile Strength: 100 mpa </li><li> Brand: Nomex </li><li> Colour: Ivory </li><li> Thickness- 0.125 mm - 0.50 mm </li></ul><li> Dimensions of Rolls - 910 mm 10 mm </li><li> Film Thickness- 0.025 mm - 0.350 mm </li><li> Raw Material/ Composition: Nomex Aramid Paper / Polyester Film </li></ul>'
-
-
-
-
-
-
                 },
             ],
         };
@@ -282,7 +276,7 @@ const reducer = (state = initialState,action) => {
                     imageData : [
                         {
                             image : '/images/img9.jpg',
-                            name : 'Elmo Luft 1A - Varnish and Thinner'
+                            name : 'Dr Beck - Elmo 1 A'
                         }, 
                     ],
                     productDetail : '<ul><li> Minimum Order Quantity: 15 Litre</li><li>Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.</li></ul>'
@@ -290,11 +284,11 @@ const reducer = (state = initialState,action) => {
                     productName : "Jyoti Insulating Varnish",
                     imageData : [
                         {
-                            image : '/images/img9.jpg',
-                            name : 'Elmo Luft 1A - Varnish and Thinner'
+                            image : '/images/jyotiVarnish.jpeg',
+                            name : 'Jyoti Insulating Varnish'
                         }, 
                     ],
-                    productDetail : '<ul><li>Offered varnish is processed using superior quality chemical compounds and the latest technology in line with industry norms. Furthermore, provided varnish is strictly tested by our quality controllers on several parameters before delivering to our customers. Our offered varnish is highly admired for its optimum quality and versatility.</li><li><b>Features:</b></li><ul><li>Superb bonding strength</li><li>Fast drying</li><li>Smooth surface</li></ul><li>Minimum Order Quantity: 15 Litre</li></ul>'
+                    productDetail : '<ul><li>Offered varnish is processed using superior quality chemical compounds and the latest technology in line with industry norms. Furthermore, provided varnish is strictly tested by our quality controllers on several parameters before delivering to our customers. Our offered varnish is highly admired for its optimum quality and versatility.</li><b>Features:</b><ul><li>Superb bonding strength</li><li>Fast drying</li><li>Smooth surface</li></ul><li>Minimum Order Quantity: 15 Litre</li></ul>'
                 }
             ]
         };
@@ -317,7 +311,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Rubber Compound'
                         }, 
                     ],
-                    productDetail : '<ul><li>Hardness :	18-90shoreA</li> <li>Material :	Rubber</li> <li>Feature :	Heatproof, Dustproof, Waterproof</li> <li>Elongation :	More than 850%</li> <li>Quality Type :	Premium Quality</li></ul>'
+                    productDetail : '<ul><li>Hardness :	18-90shoreA</li> <li>Material :	Rubber</li> <li>Feature :	Heatproof, Dustproof, Waterproof</li> <li>Elongation :	More than 850 %</li> <li>Quality Type :	Premium Quality</li><li>Poly : Double Poly</li></ul>'
                 }
             ],
         };

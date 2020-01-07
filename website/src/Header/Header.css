@@ -72,11 +72,38 @@
 .marRight12{
   margin-right: 12px !important;
 }
-@media only screen and (min-width : 992px) and (max-width : 1200px ){
-  .marTop10{
-    margin-top: 10px !important;
-  }
-}
 .marTopN10{
   margin-top: -30px !important;
+}
+@media only screen and (max-width : 400px){
+  .marTopN10{
+    margin-right: -15px !important;
+    margin-top: -50px !important;
+  }
+}
+@media only screen and (min-width : 1200px){
+  .marTop15{
+    margin-top: 15px !important;
+  }
+}
+@media only screen and (min-width : 1440px){
+  .padCustom{
+      padding-left: 100px;
+  }
+}
+@media only screen and (min-width : 450px){
+  .custH1{
+    font-size: 32px !important;
+    margin-top: 0px !important;
+  }
+  .custH5{
+    margin-top: -5px !important;
+  }
+  .borderTop{
+    position: absolute;
+    margin-top: -35px !important;
+    margin-left: 128px !important;
+    border-top: 3px solid #99844F;
+    width:280PX;
+  }
 }

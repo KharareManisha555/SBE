@@ -33,13 +33,11 @@ class Footer extends Component{
                         <div className="col-lg-4 col-md-4 col-sm-3 col-xs-12">
                             <h3>Get in Touch</h3>
                             <h4><b>Shri Balaji Electricals</b></h4>
-                            <b>Address :</b>&nbsp;
-                            
-                            Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400 002, Maharashtra, India.
+                            <b>Address:</b>&nbsp;Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400 002, Maharashtra, India.
                             <br/>
-                            <b>Mobile No. :</b> +91 99200 47380
+                            <b>Mobile No.:</b> +91-9820695966
                             <br/>
-                            <b>E-mail :</b> shribalajielectricals63@gmail.com
+                            <b>E-mail:</b> shribalajielectricals63@gmail.com
                         </div>
                         
                     </div>
@@ -48,7 +46,7 @@ class Footer extends Component{
                             © 2019 Shri Balaji Electricals. All rights reserved. 
                         </div>
                         <div className="pull-right">
-                            Designed and developed by <i>Diamond Corp.</i>. 
+                            Designed and developed by <i>GenSurge Inc.</i>
                         </div>
                     </div>
                 </div>
