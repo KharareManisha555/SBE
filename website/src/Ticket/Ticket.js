@@ -60,7 +60,7 @@ class Ticket extends Component {
                                 }
                                 return (
                                     <div key={i} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ticket">
-                                        <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{i + 1}. {data ? data.productName : ""}</label>
+                                        <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.state.productData.length > 1 ? (i + 1)+'.' : null} {data ? data.productName : ""}</label>
                                         <div className="container block-images col-lg-3 col-md-3 col-sm-12 col-xs-12 NOpadding">
                                             <img className="img-bordered img-responsive" src={data && data.imageData && data.imageData.length > 0 ? data.imageData[0].image : null} alt="" />
                                             <div data-toggle="modal" data-target={"#showModal" + i} className="overlay">
