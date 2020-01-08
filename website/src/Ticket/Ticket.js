@@ -58,13 +58,14 @@ class Ticket extends Component {
                                         className2 = 'col-lg-6 col-md-6 col-sm-12 col-xs-12';
                                     }
                                 }
+                                
                                 return (
                                     <div key={i} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ticket">
                                         <label className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">{this.state.productData.length > 1 ? (i + 1)+'.' : null} {data ? data.productName : ""}</label>
                                         <div className="container block-images col-lg-3 col-md-3 col-sm-12 col-xs-12 NOpadding">
                                             <img className="img-bordered img-responsive" src={data && data.imageData && data.imageData.length > 0 ? data.imageData[0].image : null} alt="" />
                                             <div data-toggle="modal" data-target={"#showModal" + i} className="overlay">
-                                                <div class="text">{parseInt(data.imageData.length - 1) > 0 && parseInt(data.imageData.length - 1) > 1? '+'+parseInt(data.imageData.length - 1) : ''}</div>
+                                                <div class="text">{parseInt(data.imageData.length - 1) > 0 && parseInt(data.imageData.length) > 1? '+'+parseInt(data.imageData.length - 1) : ''}</div>
                                             </div>
                                         </div>
                                         <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -79,17 +80,17 @@ class Ticket extends Component {
                                                             {
                                                                 data && data.imageData && data.imageData.length > 0 ?
                                                                     data.imageData.map((imgdata, j) => {
-                                                                        if (data.imageData.length > 3) {
+                                                                        if(data.imageData.length > 3){
                                                                             var imgLength = data.imageData.length > 0 ? data.imageData.length % 3 : 0;
                                                                             if (imgLength == 0) {
                                                                                 className1 = 'col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1';
                                                                                 className2 = 'col-lg-4 col-md-4 col-sm-12 col-xs-12';
-                                                                            } else if (imgLength == 1) {
+                                                                            } else if (imgLength == 1){
                                                                                 className1 = 'col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1';
                                                                                 if (data.imageData.length === parseInt(j + 1)) {
                                                                                     className2 = 'col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 displayContent';
                                                                                 }
-                                                                            } else if (imgLength == 2) {
+                                                                            } else if (imgLength == 2){
                                                                                 className1 = 'col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1';
                                                                                 if (data.imageData.length === parseInt(j + 2)) {
                                                                                     className2 = 'col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-12 col-xs-12 displayContent';
