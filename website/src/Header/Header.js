@@ -37,7 +37,7 @@ class Header extends Component {
                     <div className="col-lg-7 col-md-7 col-sm-12 hidden-xs">
                         <img src="/images/sbelogo.jpg" className="pull-left marRight12" width="115"/>
                         <h1 className="marTop10 custH1 blackColor headerLogo">Shri Balaji Electricals</h1>
-                        <h4 className="blackColor custH5 headerLogo">Dealers of all type insulating materials</h4>
+                        <h4 className="blackColor custH5 headerLogo">Dealers in all types of Insulating Materials</h4>
                     <div className="borderTop">
                     </div>
                     </div>
