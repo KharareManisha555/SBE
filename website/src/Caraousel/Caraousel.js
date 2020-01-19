@@ -13,13 +13,29 @@ export default class Caraousel extends Component {
       if (document.querySelector(".slides")) {
         let slides = document.querySelector(".slides");
         slides.addEventListener('click', clicked, false);
+        cycle(1);
         document.querySelectorAll(".slides .slide")[0].click();
       }
     }
-
     function clicked(e) {
       let slide = e.target;
+      console.log("slide = ",slide.getAttribute("data-slide"));
       if (slide.getAttribute("data-slide")) { rearrange(slide.getAttribute("data-slide")); }
+    }
+
+    function cycle(index) {
+      setTimeout(function() {
+          if(index == 0){rearrange(index);index++;}else{
+            if(index == 1){rearrange(index);index++;}else{
+              if(index == 2){rearrange(index);index++;}else{
+                if(index == 3){rearrange(index);index++;}else{
+                  if(index == 4){rearrange(index);index=0}
+                }
+              }
+            }
+          }
+        cycle(index)
+      },3500);
     }
 
     function rearrange(slide) {

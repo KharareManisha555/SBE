@@ -65,8 +65,9 @@ class Ticket extends Component {
                                         <div className="container block-images col-lg-3 col-md-3 col-sm-12 col-xs-12 NOpadding">
                                             <img className="img-bordered img-responsive" src={data && data.imageData && data.imageData.length > 0 ? data.imageData[0].image : null} alt="" />
                                             <div data-toggle="modal" data-target={"#showModal" + i} className="overlay">
-                                                <div class="text">{parseInt(data.imageData.length - 1) > 0 && parseInt(data.imageData.length) > 1? '+'+parseInt(data.imageData.length - 1) : ''}</div>
+                                                <div class="textOnHvr">{parseInt(data.imageData.length - 1) > 0 && parseInt(data.imageData.length) > 1? '+'+parseInt(data.imageData.length - 1) : ''}</div>
                                             </div>
+                                            <div class="textBelowImg"><i>{parseInt(data.imageData.length - 1) > 0 && parseInt(data.imageData.length) > 1?parseInt(data.imageData.length - 1)==1?'(See 1 more image)':'(See more '+parseInt(data.imageData.length - 1)+' images)' : ''}</i></div>
                                         </div>
                                         <div className="col-lg-9 col-md-9 col-sm-12 col-xs-12">
                                             <div className="blackColor" dangerouslySetInnerHTML={{ __html: data ? data.productDetail : '' }}></div>

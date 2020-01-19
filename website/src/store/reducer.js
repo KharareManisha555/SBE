@@ -57,7 +57,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Teflon tape'
                         }, 
                     ],
-                    productDetail : '<ul><li> Packaging Details: 30 nos per box  </li><li> Adhesive Type: Single Sided </li><li> Material     : PVC </li><li> Brand        : Star, Champion and V grip </li><li> Tape Width   : 0-20 mm </li></ul>'
+                    productDetail : '<ul><li> Brand : Star, Champion and V grip </li><li>Tape Width - 12mm</li><li>Thick - 0.075mm</li><li>Length - 10m</li><b>Used For:</b> RO Purifier, Aquarium Filter, Water Tank Pipe. Teflon Tape use in sealing pipe threads. The tape is sold cut to specific widths and wound on a spool, making it easy to wind around pipe threads. Quick and highly effective means of sealing threaded pipe fitting in the ENGINEERING, CHEMICAL and ELECTRICAL industries. It may be used with pipes of any material and with any medium including SOLVENTS and the strongest ALKALIS, ACIDS and other corrosive chemicals.</ul>'
                 }
             ]
         };
@@ -139,7 +139,7 @@ const reducer = (state = initialState,action) => {
                             name : 'GDR Presspahn Paper'
                         },  
                     ],
-                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li><li>"Weidman"make presspahn paper are used in power and distribution transformers.</li></ul>'
                 },{
                     productName : 'Black Leatheroid Paper - "Aspha" make',
                     imageData : [
@@ -148,7 +148,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Black Leatheroid Paper - "Aspha" make'
                         },  
                     ],
-                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                    productDetail : '<ul><li>Thickness: 0.13mm-0.50mm(5MIL-20MIL)</li> <li>Mineral ash content less than 1%</li> <li>Oil absorption: 18-22%</li> <li>Tensile strength: 50-125 N/15mm</li><b>Features:</b><ul><li>High tensile strength</li><li>Smooth calender and glossy finish</li><li>Made of complete recycled fibre</li></ul></ul>'
                 },{
                     productName : 'Undyed Leatheroid Paper - "Aspha" make',
                     imageData : [
@@ -157,7 +157,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Undyed Leatheroid Paper - "Aspha" make'
                         },  
                     ],
-                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                    productDetail : '<ul><li>Thickness: 0.13mm to 0.50mm (5MIL-20MIL)</li> <li>Mineral ash content less than 1%</li> <li>Oil absorption: 18-22%</li> <li>Tensile strength: 50-125 N/15mm</li><li>This Undyed Leatheroid Paper is suitable for transformers, switch gears and capacitors.</li><b>Features:</b><ul><li>High tensile strength</li><li>High dielectric strength</li><li>Can withstand electric strength up to 3kV in air</li></ul></ul>'
                 },{
                     productName : "Khatema Kraft Paper",
                     imageData : [
@@ -169,7 +169,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Khatema Kraft Paper'
                         },  
                     ],
-                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li></ul>'
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li><li>Kraft paper is suitable for insulation of transformers, wrapping of DPC wires, the cable industry and gaining much anticipation for its unmatched quality standards.</li></ul>'
                 },
             ],
         };
@@ -279,7 +279,7 @@ const reducer = (state = initialState,action) => {
                             name : 'Dr Beck - Elmo 1 A'
                         }, 
                     ],
-                    productDetail : '<ul><li> Minimum Order Quantity: 15 Litre</li><li>Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.</li></ul>'
+                    productDetail : '<ul><li> Minimum Order Quantity: 15 Litre</li><li>We offer a wide range of solvent-borne, water based varnishes & solventless resins for various applications.</li><li>Dr. Beck Varnish is best in class and specially required for Motor,fan and any type of rewinding works.</li><b>Advantages:</b><ul><li>Increased mechanical bonding to the winding wire</li><li>Improved dielectric properties</li><li>Improved thermal conductivity</li><li>Protection to the winding against moisture & chemically corrosive Environment</li></ul></ul>'
                 },{
                     productName : "Jyoti Insulating Varnish",
                     imageData : [

@@ -93,6 +93,7 @@
 }
 @media only screen and (min-width : 450px){
   .custH1{
+    font-weight: 900 !important;
     font-size: 32px !important;
     margin-top: 0px !important;
   }
@@ -104,6 +105,6 @@
     margin-top: -35px !important;
     margin-left: 128px !important;
     border-top: 3px solid #99844F;
-    width:280PX;
+    width:306PX;
   }
 }

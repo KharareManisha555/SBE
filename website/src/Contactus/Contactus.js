@@ -15,11 +15,17 @@ class Contactus extends Component{
             <div className="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactus">
                     <h2><span className="blackColor">Contact </span> Us</h2>
-                    <br/>
-                    <h4 className="blackColor">Shri Balaji Electricals</h4>
+                    <h3 className="blackColor">Shri Balaji Electricals</h3>
                     <p>
-                        <b>Address:</b> Shop No. 2, Peerbhoy Building, Ground Floor,<br/> 93, Princess Street, Lohar Chawl,<br/> Mumbai-400 002, Maharashtra, India.<br/><br/>
-                        
+                        <b>Shop Address :</b> Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai - 400002, Maharashtra, India.
+                        <br/>
+                        <br/>
+                        <b>Office Address :</b> B-3, Devi Ekveera Building ‘A’ Co-operative HSG society 79, Old Nagardas Road, Near Abhyudya Co-operative Bank, Andheri East, Mumbai - 400056
+                        <br/>
+                        <br/>
+                        <b>Warehouse Address :</b> Jai Bhagwan complex, godown number L4, behind Broadway cinema, Purna, Bhivandi, Dist Thane - 421302
+                        <br/>
+                        <br/>
                         <b>Mobile No.:</b>
                         <br/>
                             1. Suresh Ahuja : +91 99200 47380,
