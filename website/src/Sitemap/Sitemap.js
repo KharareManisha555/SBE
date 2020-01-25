@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import { connect }        from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import "./Sitemap.css";
@@ -37,6 +38,24 @@ class Sitemap extends Component{
                         <li><a href="/sitemap">Site Map</a></li>
                     </ul>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Site Map</title>
+                    <link rel="home" href="http://shribalajielectricals.in/"  />
+                    <link rel="aboutus" href="http://shribalajielectricals.in/about-us" />
+                    <link rel="products" href="http://shribalajielectricals.in/products" />
+                    <link rel="contactus" href="http://shribalajielectricals.in/contact-us" />
+                    <link rel="enquiry" href="http://shribalajielectricals.in/enquiry" />
+                    <link rel="sitemap" href="http://shribalajielectricals.in/sitemap" />
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <link key={i} rel={data} href={"http://shribalajielectricals.in/products/sbe/"+data.toLowerCase().replace(/ /g, '-')} />
+                            );
+                        })
+                    }
+                    <meta name="description" content="Shri Balaji Electricals" />
+                </Helmet>
             </div>
         )
     }

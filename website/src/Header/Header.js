@@ -1,5 +1,6 @@
 import { connect }        from 'react-redux';
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import $                    from 'jquery';
 import "./Header.css";
 
@@ -91,6 +92,23 @@ class Header extends Component {
                         </div>
                     </nav>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <link rel="home" href="http://shribalajielectricals.in/"  />
+                    <link rel="aboutus" href="http://shribalajielectricals.in/about-us" />
+                    <link rel="products" href="http://shribalajielectricals.in/products" />
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <link key={i} rel={data} href={"http://shribalajielectricals.in/products/sbe/"+data.toLowerCase().replace(/ /g, '-')} />
+                            );
+                        })
+                    }
+                    <link rel="contactus" href="http://shribalajielectricals.in/contact-us" />
+                    <link rel="enquiry" href="http://shribalajielectricals.in/enquiry" />
+                    <link rel="sitemap" href="http://shribalajielectricals.in/sitemap" />
+                    <meta name="description" content="Shri Balaji Electricals" />
+                </Helmet>
             </div>
         )
     }

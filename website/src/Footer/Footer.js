@@ -1,3 +1,4 @@
+import {Helmet} from "react-helmet";
 import React, { Component } from 'react';
 import "./Footer.css";
 
@@ -57,6 +58,16 @@ class Footer extends Component{
                         </div>
                     </div>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <link rel="home" href="http://shribalajielectricals.in/"  />
+                    <link rel="aboutus" href="http://shribalajielectricals.in/about-us" />
+                    <link rel="products" href="http://shribalajielectricals.in/products" />
+                    <link rel="contactus" href="http://shribalajielectricals.in/contact-us" />
+                    <link rel="enquiry" href="http://shribalajielectricals.in/enquiry" />
+                    <link rel="sitemap" href="http://shribalajielectricals.in/sitemap" />
+                    <meta name="description" content="Shri Balaji Electricals" />
+                </Helmet>
             </div>
         )
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import {withRouter} from 'react-router-dom';
 import "./Contactus.css";
 
@@ -43,6 +44,11 @@ class Contactus extends Component{
                         ahujap63@yahoo.com
                     </p>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Contact Us</title>
+                    <meta name="description" content="Shri Balaji Electricals Address: Shop No. 2, Peerbhoy Building, Ground Floor, 93, Princess Street, Lohar Chawl, Mumbai-400 002, Maharashtra, India. Suresh Ahuja : +91 99200 47380, Manoj Ahuja : +91 98200 31782, Abhishek Ahuja : +91 98206 95966, Kanaya Ahuja : +91 75063 00835 shribalajielectricals63@gmail.com, ahujap63@yahoo.com" />
+                </Helmet>
             </div>
         )
     }

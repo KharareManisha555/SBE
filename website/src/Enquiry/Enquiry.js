@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
+import {Helmet} from "react-helmet";
 import Recaptcha from 'react-recaptcha';
 import $ from 'jquery';
 import 'jquery-validation';
@@ -226,6 +227,11 @@ class Enquiry extends Component{
                         </div>
                     </form>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Enquiry</title>
+                    <meta name="description" content="Shri Balaji Electricals" />
+                </Helmet>
             </div>
         )
     }

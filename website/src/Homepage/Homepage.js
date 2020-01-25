@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { connect }        from 'react-redux';
 import {withRouter} from 'react-router-dom';
+import {Helmet} from "react-helmet";
 import "./Homepage.css";
 
 class Homepage extends Component{
@@ -19,23 +21,42 @@ class Homepage extends Component{
                     <p>Shri Balaji Electricals was established in the year <b>1980 at Mumbai, Maharashtra</b>. We “<b>Shri Balaji Electricals</b>” are a <b>Sole Proprietorship</b> firm, engaged as the foremost <b>Wholesaler And Trader of PVC Tapes, Fiberglass Sleevings, Insulating Paper and All Types Of Insulating Material</b>. Our products are high in demand due to their premium quality and affordable prices. Furthermore, we ensure to timely deliver these products to our clients, through this we have gained a huge clients base in the market.</p>
                     <p><b>Our range of insulation material includes:</b></p>
                     <ul>
-                        <li>Electric PVC Tapes in all sizes</li>
-                        <li>Garware Polyester Film including slitted paper</li>
-                        <li>B/C/F/H class insulation papers</li>
-                        <li>Kraft and Crepe papers</li>
-                        <li>Rubber Compound for Submersible</li>
-                        <li>Submersible/Copper/Aluminium/DPC winding wires</li>
-                        <li>Cotton Tapes/Webbing Tapes for motor winding</li>
-                        <li>B/F/H class Fiber Glass Sleevings</li>
-                        <li>Pre-Compressed board - Imported and Handmade</li>
-                        <li>Insulating Varnish</li>
-                        <li>Fiber Glass Wires and Cables</li>
-                        <li>Soldering Wire, Stick and Flux</li>
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <li key={i} id={data.toLowerCase().replace(/ /g, '-')}>{data}</li>
+                            );
+                        })
+                    }
                     </ul>
-
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Shri Balaji Electricals</title>
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <link key={i} rel={data} href={"http://shribalajielectricals.in/products/sbe/"+data.toLowerCase().replace(/ /g, '-')} />
+                            );
+                        })
+                    }
+                    <meta name="description" content="Shri Balaji Electricals was established in the year 1980 at Mumbai, Maharashtra. We “Shri Balaji Electricals” are a Sole Proprietorship firm, engaged as the foremost Wholesaler And Trader of PVC Tapes, Fiberglass Sleevings, Insulating Paper and All Types Of Insulating Material. Our products are high in demand due to their premium quality and affordable prices. Furthermore, we ensure to timely deliver these products to our clients, through this we have gained a huge clients base in the market." />
+                </Helmet>
             </div>
         )
     }
 }
-export default withRouter(Homepage);
+const mapStateToProps = (state)=>{
+    return {
+        subBlockData      : state.subBlockData,
+        sidebarList       : state.sidebarList
+    }
+}
+const mapDispachToProps = (dispach) =>{
+    return {
+        subBlockDataUrl : (subBlockData)=> dispach({
+        type: subBlockData,
+      }),
+    }
+}
+export default connect(mapStateToProps, mapDispachToProps) (withRouter(Homepage));

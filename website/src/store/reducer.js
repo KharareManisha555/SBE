@@ -5,7 +5,6 @@ const initialState = {
         "Kraft Paper",
         "Nomex Insulation Paper",
         "Insulated Fiberglass Sleevings",
-        // "Electrical Insulation Kraft Paper",
         "Cotton Tape",
         "Garware Polyester Film",
         "Insulation Varnish",
@@ -13,6 +12,7 @@ const initialState = {
         "Fibre Glass Products",
         "Soldering Wires & Stics",
         "Super Enamelled Copper Wires",
+        "Super Enamelled Copper Wires 2",
     ]
 }
 
@@ -124,7 +124,6 @@ const reducer = (state = initialState,action) => {
             ],
         };
     }
-    
     if(action.type === "kraft-paper"){
 		newState.subBlockData = {
             title1 : 'Kraft',
@@ -201,26 +200,7 @@ const reducer = (state = initialState,action) => {
                 },
             ],
         };
-    }
-    // if(action.type === "electrical-insulation-kraft-paper"){
-	// 	newState.subBlockData 		= {
-    //         title1 : 'Electrical Insulation',
-    //         title2 : 'Kraft Paper',
-    //         description : '',
-    //         productData : [
-    //             {
-    //                 productName : "Electrical Insulation Kraft Paper",
-    //                 imageData : [
-    //                     {
-    //                         image : '/images/img7.jpg',
-    //                         name : 'Electrical Insulation Kraft Paper'
-    //                     },
-    //                 ],
-    //                 productDetail : '<ul><li> Paper Type: Kraft Paper </li> <li> Packaging Type: Roll </li> <li> Pulp Material: Sulfate Pulp </li> <li> Thickness: 0.05 mm - 0.25 mm </li> <li> Pattern: Plain </li> <li> Temperature: 105 Degree C </li></ul>'
-    //             },
-    //         ],
-    //     };
-    // } 
+    } 
     if(action.type === "cotton-tape"){
      newState.subBlockData       = {
             title1 : 'Cotton',
@@ -386,6 +366,39 @@ const reducer = (state = initialState,action) => {
             ],
             para1 : "We are Authorized Distributor of Polyster Film - Garware , which is made up of premier quality raw material thus, confirming to the international standards. It Can be Supplied as per specific sizes of customer's need.",
             para2 : []
+        };
+    }
+    if(action.type === "super-enamelled-copper-wires-2"){
+		newState.subBlockData 		= {
+            title1 : 'Super Enamelled',
+            title2 : 'Copper Wires 2',
+            description: '',
+            productData : [
+                {
+                    productName : "Super Enamelled Copper Wires",
+                    imageData : [
+                        {
+                            image : '/images/img2.jpg',
+                            name : 'Super Enamelled Copper Wires'
+                        }, 
+                        {
+                            image : '/images/super-enamelled-copper-wires.jpg',
+                            name : 'Super Enamelled Copper Wires'
+                        },
+                    ],
+                    productDetail : '<ul><li> Diameter: 1-3 mm </li> <li> Wire Gauge: 5-10 </li> <li> Shape: Round </li> <li> Insulation Type: Enameled </li> <li> Material: Copper </li> <li> Super Enamelled Copper Wires </li><br/></ul>'
+                },
+                {
+                    productName : "Steel Alloy Wire",
+                    imageData : [
+                        {
+                            image : '/images/super-enamelled-copper-wires2.jpg',
+                            name : 'Steel Alloy Wire'
+                        }, 
+                    ],
+                    productDetail : '<ul><li>Material	Steel</li> <li>Usage/Application	Electrical Industry</li> <li>Thickness	0.50 mm To 6 mm</li> <li>Single Piece Length	3 meter, 6 meter</li> <li>Tensile Strength	280Mpa</li></ul>'
+                },
+            ],
         };
     }
 	return newState;

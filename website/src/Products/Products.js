@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import {withRouter} from 'react-router-dom';
 import "./Products.css";
 
@@ -81,6 +82,18 @@ class Products extends Component{
                         
                     </ul>
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Products</title>
+                    {
+                        this.state.products.map((data, i)=>{
+                            return(
+                                <link key={i} rel={data.title} href={"http://shribalajielectricals.in/products/sbe/"+data.title} />
+                            );
+                        })
+                    }
+                    <meta name="description" content="Shri Balaji Electricals was established in the year 1980 at Mumbai, Maharashtra. We “Shri Balaji Electricals” are a Sole Proprietorship firm, engaged as the foremost Wholesaler And Trader of PVC Tapes, Fiberglass Sleevings, Insulating Paper and All Types Of Insulating Material. Our products are high in demand due to their premium quality and affordable prices. Furthermore, we ensure to timely deliver these products to our clients, through this we have gained a huge clients base in the market." />
+                </Helmet>
             </div>
         )
     }

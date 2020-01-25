@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Helmet} from "react-helmet";
 import { connect }        from 'react-redux';
 import {withRouter} from 'react-router-dom';
 import "./Sidebar.css";
@@ -32,6 +33,17 @@ class Sidebar extends Component {
                     
                     
                 </ul>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    {
+                        this.props.sidebarList.map((data, i)=>{
+                            return(
+                                <link key={i} rel={data} href={"http://shribalajielectricals.in/products/sbe/"+data.toLowerCase().replace(/ /g, '-')} />
+                            );
+                        })
+                    }
+                    <meta name="description" content="Shri Balaji Electricals" />
+                </Helmet>
             </div>
         )
     }
