@@ -5,6 +5,7 @@ const initialState = {
         "Kraft Paper",
         "Nomex Insulation Paper",
         "Insulated Fiberglass Sleevings",
+        "Aluminuim and Copper Lugs",
         "Cotton Tape",
         "Garware Polyester Film",
         "Insulation Varnish",
@@ -12,7 +13,6 @@ const initialState = {
         "Fibre Glass Products",
         "Soldering Wires & Stics",
         "Super Enamelled Copper Wires",
-        "Super Enamelled Copper Wires 2",
     ]
 }
 
@@ -124,6 +124,7 @@ const reducer = (state = initialState,action) => {
             ],
         };
     }
+    
     if(action.type === "kraft-paper"){
 		newState.subBlockData = {
             title1 : 'Kraft',
@@ -138,7 +139,7 @@ const reducer = (state = initialState,action) => {
                             name : 'GDR Presspahn Paper'
                         },  
                     ],
-                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li> <li> For Power transformers, also used in the label industry </li><li>"Weidman"make presspahn paper are used in power and distribution transformers.</li></ul>'
+                    productDetail : '<ul><li> GSM: 150 - 200 </li> <li> Size: 1/2 to 5 inch </li> <li> Packaging Type: Roll </li> <li> Material: Kraft Paper </li><li>"Weidman"make presspahn paper are used in power and distribution transformers and in the label industry</li></ul>'
                 },{
                     productName : 'Black Leatheroid Paper - "Aspha" make',
                     imageData : [
@@ -196,7 +197,26 @@ const reducer = (state = initialState,action) => {
                             name : 'Nomex Insulation Paper'
                         },  
                     ],
-                    productDetail : '<ul><li> Material: Dupond </li> <li> Packaging Type: Roll </li><li> Tensile Strength: 100 mpa </li><li> Brand: Nomex </li><li> Colour: Ivory </li><li> Thickness- 0.125 mm - 0.50 mm </li></ul><li> Dimensions of Rolls - 910 mm 10 mm </li><li> Film Thickness- 0.025 mm - 0.350 mm </li><li> Raw Material/ Composition: Nomex Aramid Paper / Polyester Film </li></ul>'
+                    productDetail : '<ul><li> Material: Dupond </li> <li> Packaging Type: Roll </li><li> Tensile Strength: 100 mpa </li><li> Brand: Nomex </li><li> Colour: Ivory </li><li> Thickness- 0.125 mm - 0.50 mm </li><li> Dimensions of Rolls - 910 mm 10 mm </li><li> Film Thickness- 0.025 mm - 0.350 mm </li><li> Raw Material/ Composition: Nomex Aramid Paper / Polyester Film </li></ul>'
+                },
+            ],
+        };
+    }
+    if(action.type === "aluminuim-and-copper-lugs"){
+		newState.subBlockData 		= {
+            title1 : 'Aluminuim and Copper',
+            title2 : 'Lugs',
+            description : 'Aiming to satisfy our clients, optimally, we provide our clients with a quality approved array of Copper and Aluminium Lugs. The offered range is manufactured using optimum quality copper and latest technology in accordance with the specifications of our clients. Furthermore, the entire range is well checked against various quality parameters to ensure its quality attributes at clients’ end.',
+            productData : [
+                {
+                    productName : "Aluminuim and Copper Lugs",
+                    imageData : [
+                        {
+                            image : '/images/Lugs.jpg',
+                            name : 'Aluminuim and Copper Lugs'
+                        },
+                    ],
+                    productDetail : '<b>&nbsp;&nbsp;&nbsp;Features:</b><ul><li>Precision-designed</li><li>Optimally finished</li><li>Durability</li></ul><b>&nbsp;&nbsp;&nbsp;Range:</b><ul><li>Ring Type Brazed Seam</li><li>Ring Type Double Grip With Insulation Sleeve</li><li>Tailor made Ring Type Brazed Seam</li><li>Fork Type Brazed Seam</li><li>Fork Type with Insulation Sleeve</li><li>Fork Type Double Grip with Insulating Sleeve</li><li>Fork Type with hook Brazed Seam</li><li>Tailor made Fork Type</li><li>Chain From Fork Type</li><li>Round Pin Type Brazed Seam</li><li>Rectangular Pin Type Brazed Seam</li><li>Round Pin Type with insulating Sleeve</li><li>Round Pin Type Double Grip With Insulating Sleeve</li><li>Tailor made Round Pin Type</li><li>Copper Lugs 25 mm Sqr - 1000 mm Sqr</li><li>Range:- 0.5 mm Sqr to 1000 mm Sqr</li></ul><b>&nbsp;&nbsp;&nbsp;Type:</b><ul><li>Ring, Fork, Pin, PAM, Tubular, Ferrule, Insulated, EHI, Twin EHI, Soldering, XLPE, Reducer, In-line Connector, Snap On type, etc.</li></ul>'
                 },
             ],
         };
@@ -366,39 +386,6 @@ const reducer = (state = initialState,action) => {
             ],
             para1 : "We are Authorized Distributor of Polyster Film - Garware , which is made up of premier quality raw material thus, confirming to the international standards. It Can be Supplied as per specific sizes of customer's need.",
             para2 : []
-        };
-    }
-    if(action.type === "super-enamelled-copper-wires-2"){
-		newState.subBlockData 		= {
-            title1 : 'Super Enamelled',
-            title2 : 'Copper Wires 2',
-            description: '',
-            productData : [
-                {
-                    productName : "Super Enamelled Copper Wires",
-                    imageData : [
-                        {
-                            image : '/images/img2.jpg',
-                            name : 'Super Enamelled Copper Wires'
-                        }, 
-                        {
-                            image : '/images/super-enamelled-copper-wires.jpg',
-                            name : 'Super Enamelled Copper Wires'
-                        },
-                    ],
-                    productDetail : '<ul><li> Diameter: 1-3 mm </li> <li> Wire Gauge: 5-10 </li> <li> Shape: Round </li> <li> Insulation Type: Enameled </li> <li> Material: Copper </li> <li> Super Enamelled Copper Wires </li><br/></ul>'
-                },
-                {
-                    productName : "Steel Alloy Wire",
-                    imageData : [
-                        {
-                            image : '/images/super-enamelled-copper-wires2.jpg',
-                            name : 'Steel Alloy Wire'
-                        }, 
-                    ],
-                    productDetail : '<ul><li>Material	Steel</li> <li>Usage/Application	Electrical Industry</li> <li>Thickness	0.50 mm To 6 mm</li> <li>Single Piece Length	3 meter, 6 meter</li> <li>Tensile Strength	280Mpa</li></ul>'
-                },
-            ],
         };
     }
 	return newState;

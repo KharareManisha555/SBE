@@ -1,4 +1,3 @@
-import {Helmet} from "react-helmet";
 import React, { Component } from 'react';
 import "./Footer.css";
 
@@ -42,6 +41,7 @@ class Footer extends Component{
                             <br/>
                             <h5><b>• Warehouse Address :</b></h5>Jai Bhagwan complex, godown number L4, behind Broadway cinema, Purna, Bhivandi, Dist Thane - 421302
                             <br/>
+                            <br/>
                             <b>Mobile No.:</b> +91-9820695966
                             <br/>
                             <b>E-mail:</b> shribalajielectricals63@gmail.com
@@ -58,17 +58,6 @@ class Footer extends Component{
                         </div>
                     </div>
                 </div>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <link rel="home" href="http://shribalajielectricals.in/"  />
-                    <link rel="aboutus" href="http://shribalajielectricals.in/about-us" />
-                    <link rel="products" href="http://shribalajielectricals.in/products" />
-                    <link rel="contactus" href="http://shribalajielectricals.in/contact-us" />
-                    <link rel="enquiry" href="http://shribalajielectricals.in/enquiry" />
-                    <link rel="sitemap" href="http://shribalajielectricals.in/sitemap" />
-                    <meta name="keywords" content="Shri Balaji Electricals, Dealers in all types of Insulating Materials, Electric PVC Tape, Kraft Paper, Nomex Insulation Paper, Insulated Fiberglass Sleevings, Cotton Tape, Garware Polyester Film, Insulation Varnish, Rubber Compound, Fibre Glass Products, Soldering Wires and Stics, Super Enamelled Copper Wires, Electronic, Steel Alloy Wire, GDR Presspahn Paper, Black Leatheroid Paper - Aspha make,  Undyed Leatheroid Paper, Khatema Kraft Paper, Heat Shrinkable Sleevs, Dr Beck - Elmo 1 A, Jyoti Insulating Varnish, Red Polyester Tape, White Polyester Tape, Industrial Fibreglass Cables, SBE, GenSurge Inc., shribalajielectricals.in, http://shribalajielectricals.in/, www.sribalajielectricals.net"></meta>
-                    <meta name="description" content="Shri Balaji Electricals" />
-                </Helmet>
             </div>
         )
     }
