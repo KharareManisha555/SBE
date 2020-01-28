@@ -25,6 +25,7 @@ class Homepage extends Component{
                         <li>Kraft and Crepe papers</li>
                         <li>Rubber Compound for Submersible</li>
                         <li>Submersible/Copper/Aluminium/DPC winding wires</li>
+                        <li>Aluminuim and Copper Lugs</li>
                         <li>Cotton Tapes/Webbing Tapes for motor winding</li>
                         <li>B/F/H class Fiber Glass Sleevings</li>
                         <li>Pre-Compressed board - Imported and Handmade</li>
