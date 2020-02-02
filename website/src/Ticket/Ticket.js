@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import {Helmet} from "react-helmet";
 import "./Ticket.css";
 
 class Ticket extends Component {
@@ -122,11 +123,38 @@ class Ticket extends Component {
                             :
                             null
                     }
-
-
-
-
                 </div>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>{this.state.title1+" "+this.state.title2}</title>
+                    <link rel="home" href="http://shribalajielectricals.in/"  />
+                    <link rel="aboutus" href="http://shribalajielectricals.in/about-us" />
+                    <link rel="products" href="http://shribalajielectricals.in/products" />
+                    <link rel="contactus" href="http://shribalajielectricals.in/contact-us" />
+                    <link rel="enquiry" href="http://shribalajielectricals.in/enquiry" />
+                    <link rel="sitemap" href="http://shribalajielectricals.in/sitemap" />
+                    <meta name="keywords" content="Shri Balaji Electricals, Dealers in all types of Insulating Materials, Electric PVC Tape, Kraft Paper, Nomex Insulation Paper, Insulated Fiberglass Sleevings, Cotton Tape, Garware Polyester Film, Insulation Varnish, Rubber Compound, Fibre Glass Products, Soldering Wires and Stics, Super Enamelled Copper Wires, Electronic, Steel Alloy Wire, GDR Presspahn Paper, Black Leatheroid Paper - Aspha make,  Undyed Leatheroid Paper, Khatema Kraft Paper, Heat Shrinkable Sleevs, Dr Beck - Elmo 1 A, Jyoti Insulating Varnish, Red Polyester Tape, White Polyester Tape, Industrial Fibreglass Cables, SBE, GenSurge Inc., shribalajielectricals.in, http://shribalajielectricals.in/, www.sribalajielectricals.net"></meta>
+                    {
+                        this.state.productData && this.state.productData.length > 0 ?
+                        this.state.productData.map((data, i) => {
+                            return(
+                                <meta name="description" content={""+data ? data.productName : ""+""} />
+                            );
+                        })
+                        :
+                        null
+                    }
+                    {
+                        this.state.productData && this.state.productData.length > 0 ?
+                        this.state.productData.map((data, i) => {
+                            return(
+                                <meta name="description" content={""+data.productDetail+""} />
+                            );
+                        })
+                        :
+                        null
+                    }
+                </Helmet>
             </div>
         )
     }
