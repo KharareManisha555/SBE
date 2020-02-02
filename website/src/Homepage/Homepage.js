@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom';
+import { connect }        from 'react-redux';
 import {Helmet} from "react-helmet";
 import "./Homepage.css";
 
@@ -52,4 +53,17 @@ class Homepage extends Component{
         )
     }
 }
-export default withRouter(Homepage);
+const mapStateToProps = (state)=>{
+    return {
+        subBlockData      : state.subBlockData,
+        sidebarList       : state.sidebarList
+    }
+}
+const mapDispachToProps = (dispach) =>{
+    return {
+        subBlockDataUrl : (subBlockData)=> dispach({
+        type: subBlockData,
+      }),
+    }
+}
+export default connect(mapStateToProps, mapDispachToProps) (withRouter(Homepage));
