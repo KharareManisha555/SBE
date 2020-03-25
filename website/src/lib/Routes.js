@@ -13,9 +13,10 @@ import Header     from '../Header/Header.js';
 import Footer     from '../Footer/Footer.js';
 import Sidebar    from '../Sidebar/Sidebar.js';
 import Homepage   from '../Homepage/Homepage.js';
+import HomepageMob   from '../Homepage/HomepageMob.js';
 import Aboutus    from '../Aboutus/Aboutus.js';
 import Products   from '../Products/Products.js';
-import Ticket   from '../Ticket/Ticket.js';
+import Ticket     from '../Ticket/Ticket.js';
 import Contactus  from '../Contactus/Contactus.js';
 import Enquiry    from '../Enquiry/Enquiry.js';
 import Sitemap    from '../Sitemap/Sitemap.js';
@@ -40,6 +41,7 @@ function Routes() {
         <Header />
         <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
           <Caraousel/>
+          <HomepageMob/>
           <Sidebar />
           <Switch>
             <Route path="/" component={ WebLayout } />

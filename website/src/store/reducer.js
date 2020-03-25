@@ -11,7 +11,7 @@ const initialState = {
         "Insulation Varnish",
         "Rubber Compound",
         "Fibre Glass Products",
-        "Soldering Wires & Stics",
+        "Soldering Wires & sticks",
         "Super Enamelled Copper Wires",
     ]
 }
@@ -355,18 +355,18 @@ const reducer = (state = initialState,action) => {
             ],
         };
     }
-    if(action.type === "soldering-wires-&-stics"){
+    if(action.type === "soldering-wires-&-sticks"){
 		newState.subBlockData 		= {
             title1 : "Soldering Wires",
-            title2 : "and Stics",
+            title2 : "and Sticks",
             description : '',
             productData : [
                 {
-                    productName : "Soldering Wires and Stics",
+                    productName : "Soldering Wires and Sticks",
                     imageData : [
                         {
                             image : '/images/solder-sticks.jpeg',
-                            name : 'Soldering Wires and Stics'
+                            name : 'Soldering Wires and Sticks'
                         },
                     ],
                     productDetail : '<ul><li>Material :	Non Ferrous</li> <li>Working Temperature ( degree Celsius) : 	200-250 degree Celsius</li> <li>Usage :	Wave Soldering, Hot Dip Soldering</li> <li>Surface Treatment :	Coated</li></ul>'
